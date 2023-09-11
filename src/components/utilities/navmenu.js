@@ -17,7 +17,7 @@ function scroll() {
 
 export default function Navmenu() {
   return (
-    <Menu as="div" className="relative inline-block text-left opacity-90 lg:max-xl:hidden">
+    <Menu as="div" className="relative inline-block text-left opacity-90 lg:hidden">
       <div>
         <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 hover:stroke-lightgray">
           <img className="h-16"src={Dropmenu} alt="Navmenu"></img>
