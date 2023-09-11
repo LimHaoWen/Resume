@@ -79,12 +79,12 @@ export default function Navmenu() {
                 {({ active }) => (
                   <button
                     type="submit"
-                    className={classNames(
+                    className={classNames("w-56 text-left",
                       active ? 'bg-lightgray text-charcoal' : 'text-black',
                     'block px-4 py-2 text-sm'
                     )}
                   >
-                    <HiOutlineMail className="inline-block h-5 mr-2 mb-[0.15rem]"/> Contact Me
+                    <HiOutlineMail className="inline-block h-4 mr-2 mb-[0.15rem]"/> Contact Me
                   </button>
                 )}
               </Menu.Item>
