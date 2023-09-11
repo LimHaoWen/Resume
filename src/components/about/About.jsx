@@ -4,7 +4,7 @@ import Profile from "../images/Profile.JPG"
 const About = () => {  
   return (
     <>
-      <div className="h-[100vh] md:max-lg:h-[120vh] lg:max-xl:h-[100vh] xl:h-[80vh] w-screen bg-white relative 
+      <div className="h-[120vh] md:max-lg:h-[120vh] lg:max-xl:h-[100vh] xl:h-[80vh] w-screen bg-white relative 
       z-10 mt-[150px] ">
         <div className="h-full md:max-lg:w-screen lg:max-xl:w-[68%] xl:w-[72%] bg-white inline-block 
         md:max-lg:inline-block lg:flex mx-auto relative before:content-[''] before:absolute before:bg-gray 

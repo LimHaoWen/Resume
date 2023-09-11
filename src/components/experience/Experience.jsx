@@ -28,7 +28,7 @@ const Experience = () => {
             </div>
           </div>
       </div>
-      <div className="h-[50vh] w-screen md:hidden relative before:content-[''] before:absolute before:bg-gray 
+      <div className="h-[70vh] w-screen md:hidden relative before:content-[''] before:absolute before:bg-gray 
       before:left-[50%] before:bottom-[70px] before:translate-x-[-50%] before:w-[80%] before:h-0.5">
         <p className="text-2xl mt-0 pl-5 reveal relative transform translate-y-[100px] opacity-0 transition-all 
         duration-[1500ms] ease-out [&.active]:translate-y-0 [&.active]:opacity-100">Past work experience</p>
