@@ -44,7 +44,7 @@ const Experience = () => {
         <div className="h-[30%] w-[11rem] mt-60 sticky top-[30px] mx-auto reveal transform translate-y-[100px] 
         opacity-0 transition-all duration-[1500ms] ease-out [&.active]:translate-y-0 [&.active]:opacity-100 
         hover:scale-[1.3]">
-          <a className="text-md text-black float-left" href="https://drive.google.com/file/d/1r2sA4xA_E9d_5p0yevSHIzVf7KO5JnOD/view?usp=drive_link" 
+          <a className="text-md text-black float-left" href="https://drive.google.com/file/d/1-DuJ6-kqdfWJnUkPyQ9pCFKiX1qEW_JR/view?usp=drive_link" 
           target="_blank" rel="noreferrer">Browse full résumé</a>
           <img className="w-5 h-auto float-right" src={Arrow} alt="Arrow"></img>
         </div>
