@@ -8,7 +8,7 @@ import Tailwindlogo from "../images/Tailwindlogo.png"
 const Skills = () => {
   return (
     <>
-      <div className="h-[60vh] md:h-[60vh] lg:h-[100vh] xl:h-[70vh] w-[100%] flex bg-white z-10">
+      <div className="h-[60vh] md:h-[60vh] lg:h-[100vh] xl:h-[70vh] w-screen flex bg-white z-10">
         <div className="h-full md:max-lg:w-4/5 lg:w-[68%] xl:w-[72%] mx-auto relative z-10 bg-white 
         before:content-[''] before:absolute before:bg-gray before:left-[50%] before:bottom-[70px] 
         before:translate-x-[-50%] before:w-[80%] before:h-0.5">

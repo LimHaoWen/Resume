@@ -1,5 +1,5 @@
-import React, {useState, useEffect} from 'react'
-import {FaLinkedinIn, FaInstagram, FaGithub} from 'react-icons/fa'
+import React, { useState, useEffect } from 'react'
+import { FaLinkedinIn, FaInstagram, FaGithub } from 'react-icons/fa'
 import { debounce } from '../utilities/debounce'
 import Navmenu from '../utilities/navmenu'
 

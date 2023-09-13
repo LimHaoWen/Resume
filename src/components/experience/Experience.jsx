@@ -5,7 +5,7 @@ const Experience = () => {
   return (
     <>
     {/* md screen and up */}
-      <div className="hidden md:flex md:md:max-lg:h-screen lg:max-xl:h-[100vh] xl:h-[70vh] bg-white">
+      <div className="hidden md:flex md:md:max-lg:h-screen lg:max-xl:h-[100vh] xl:h-[70vh] w-screen bg-white">
         <div className="h-full md:max-lg:w-4/5 lg:max-xl:w-[68%] xl:w-[72%] bg-white mx-auto relative z-10 
         before:content-[''] before:absolute before:bg-gray before:left-[50%] before:bottom-[70px] 
         before:translate-x-[-50%] before:w-[80%] before:h-0.5">
@@ -25,8 +25,9 @@ const Experience = () => {
               </div>
             </div>
             <div className="w-1/2 h-full float-right">
-              <p className="mt-80 text-justify">I have yet to gain real industry experience and am looking for 
-              the opportunity to gain some. Please contact me if you feel that I am potentially cut out for a role!</p>
+              <p className="mt-80 text-lg text-justify">As a mechanical engineering graduate, I have yet to gain real 
+              industry experience and am looking for the opportunity to gain some. Contact me if you feel that 
+              I am potentially cut out for a role!</p>
             </div>
           </div>
       </div>
