@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Resume/static/css/main.cece18b8.css",
-    "main.js": "/Resume/static/js/main.48091f92.js",
+    "main.css": "/Resume/static/css/main.1ce18deb.css",
+    "main.js": "/Resume/static/js/main.94e649d8.js",
     "static/media/Tracksample.jpeg": "/Resume/static/media/Tracksample.6e39bffbdf07daed1e35.jpeg",
     "static/media/Profile.JPG": "/Resume/static/media/Profile.ef7c8ae9018d42c503c4.JPG",
     "static/media/Reactlogo.png": "/Resume/static/media/Reactlogo.cb383f7be127b0183272.png",
     "static/media/Nodelogo.png": "/Resume/static/media/Nodelogo.d5cd01a465362fcd07f7.png",
     "static/media/Tailwindlogo.png": "/Resume/static/media/Tailwindlogo.db57d85a2a71027c6bd2.png",
     "index.html": "/Resume/index.html",
-    "main.cece18b8.css.map": "/Resume/static/css/main.cece18b8.css.map",
-    "main.48091f92.js.map": "/Resume/static/js/main.48091f92.js.map"
+    "main.1ce18deb.css.map": "/Resume/static/css/main.1ce18deb.css.map",
+    "main.94e649d8.js.map": "/Resume/static/js/main.94e649d8.js.map"
   },
   "entrypoints": [
-    "static/css/main.cece18b8.css",
-    "static/js/main.48091f92.js"
+    "static/css/main.1ce18deb.css",
+    "static/js/main.94e649d8.js"
   ]
 }
