@@ -1,5 +1,10 @@
 import React, { useEffect } from "react"
 import Projectcard from "../utilities/projectcard"
+import Sg from "../images/Tracksample.jpeg"
+import Cat from "../images/Ragdoll.jpeg"
+import Corgi from "../images/Corgi.jpeg"
+import Street from "../images/Street.jpeg"
+import Scene from "../images/Scenery.jpeg"
 
 
 const Projects = () => {
@@ -82,11 +87,11 @@ const Projects = () => {
           [&.active]:translate-y-0 [&.active]:opacity-100">Projects</p> 
           <div id="projectTrack" className="flex lg:w-[150vw] absolute gap-5 lg:gap-8 top-[15%] left-5 lg:left-[2%] transform-x-0 
           -transform-y-1/2" data-mouse-down-at="0" data-prev-percentage="0">
-              <Projectcard />
-              <Projectcard />
-              <Projectcard />
-              <Projectcard />
-              <Projectcard />
+              <Projectcard src={ Sg } />
+              <Projectcard src={ Cat } />
+              <Projectcard src={ Street } />
+              <Projectcard src={ Corgi } />
+              <Projectcard src={ Scene } />
           </div>
         </div>
       </div>
