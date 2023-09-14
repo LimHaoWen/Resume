@@ -5,10 +5,12 @@ import Track from "../images/Tracksample.jpeg"
 const Projectcard = () => {
     return (
         <>
-        <div className="card w-[45vmin] h-[65vmin] hover:bg-lightgray">
-            <img className="image w-[45vmin] h-[65vmin] object-cover object-right hover:opacity-50" draggable="false" src={Track} alt="project" />
-            <a className="project relative invisible -top-1/2 left-1/3 text-darkgray opacity-50" href="https://www.google.com.sg/" 
-            target="_blank" rel="noreferrer" draggable="false">View project</a>
+        <div className="card w-[55vmin] h-[75vmin] lg:w-[55vmin] lg:h-[65vmin] xl:w-[35vmin] xl:h-[50vmin] hover:bg-darkgray">
+            <img className="image w-[55vmin] h-[75vmin] lg:w-[55vmin] lg:h-[65vmin] xl:w-[35vmin] xl:h-[50vmin] object-cover object-right 
+            hover:opacity-50" draggable="false" src={Track} alt="project" />
+            <a className="project relative invisible -top-1/2 left-[30%] md:left-[35.5%] lg:left-[34.5%] xl:left-[35.5%]
+            text-white font-medium md:text-2xl" 
+            href="https://www.google.com.sg/" target="_blank" rel="noreferrer" draggable="false">View Project</a>
         </div>
         </>
     )

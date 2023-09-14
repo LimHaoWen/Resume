@@ -72,15 +72,15 @@ const Projects = () => {
 
   return (
       <>
-      <div className="h-[60vh] md:max-lg:h-[120vh] lg:max-xl:h-[100vh] xl:h-[80vh] w-full bg-white relative 
+      <div className="h-[60vh] md:max-lg:h-[80vh] lg:max-xl:h-[100vh] xl:h-[80vh] w-full bg-white relative 
       z-10 overflow-hidden">
-        <div className="h-full w-full md:max-lg:w-screen lg:max-xl:w-[68%] xl:w-[72%] bg-white inline-block 
-        md:max-lg:inline-block lg:flex mx-auto relative before:content-[''] before:absolute before:bg-gray 
+        <div className="h-full w-full md:max-lg:w-4/5 lg:max-xl:w-[68%] xl:w-[72%] bg-white inline-block 
+        md:flex mx-auto relative before:content-[''] before:absolute before:bg-gray 
         before:left-[50%] before:bottom-[70px] before:translate-x-[-50%] before:w-[80%] before:h-0.5">
           <p className="h-10 mt-0 pl-5 text-2xl md:max-lg:text-3xl lg:text-4xl xl:text-5xl md:mt-8 
           reveal relative transform translate-y-[100px] opacity-0 transition-all duration-[1500ms] ease-out 
           [&.active]:translate-y-0 [&.active]:opacity-100">Projects</p> 
-          <div id="projectTrack" className="flex w-[110vw] absolute gap-5 top-[15%] left-[25%] transform-x-0 
+          <div id="projectTrack" className="flex lg:w-[150vw] absolute gap-5 lg:gap-8 top-[15%] left-5 lg:left-[2%] transform-x-0 
           -transform-y-1/2" data-mouse-down-at="0" data-prev-percentage="0">
               <Projectcard />
               <Projectcard />

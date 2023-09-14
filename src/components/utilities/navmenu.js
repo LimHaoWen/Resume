@@ -19,7 +19,8 @@ export default function Navmenu() {
   return (
     <Menu as="div" className="relative inline-block text-left opacity-90 lg:hidden">
       <div>
-        <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 hover:stroke-lightgray">
+        <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white 
+        px-3 py-2 text-sm font-semibold text-gray-900 hover:stroke-lightgray">
           <img className="h-16"src={Dropmenu} alt="Navmenu"></img>
         </Menu.Button>
       </div>
@@ -33,7 +34,8 @@ export default function Navmenu() {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="absolute right-7 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+        <Menu.Items className="absolute right-7 z-10 mt-2 w-56 origin-top-right rounded-md bg-white 
+        shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
           <div className="py-1">
             <Menu.Item>
               {({ active }) => (
