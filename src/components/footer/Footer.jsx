@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const Footer = () => {
   return (
     <>
@@ -20,7 +21,6 @@ const Footer = () => {
           </div>
       </div>
     </>
-
   )
 }
 

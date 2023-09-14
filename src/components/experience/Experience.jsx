@@ -1,6 +1,7 @@
 import React from "react"
 import Arrow from "../images/Arrow.png"
 
+
 const Experience = () => {
   return (
     <>
@@ -31,6 +32,7 @@ const Experience = () => {
             </div>
           </div>
       </div>
+      
       {/* Mobile screens */}
       <div className="h-[70vh] w-screen md:hidden relative before:content-[''] before:absolute before:bg-gray 
       before:left-[50%] before:bottom-[70px] before:translate-x-[-50%] before:w-[80%] before:h-0.5">

@@ -3,6 +3,7 @@ import { FaLinkedinIn, FaInstagram, FaGithub } from 'react-icons/fa'
 import { debounce } from '../utilities/debounce'
 import Navmenu from '../utilities/navmenu'
 
+
 const Header = () => {
 
   const navbarStyles = {

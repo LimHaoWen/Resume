@@ -1,6 +1,7 @@
 import React from "react"
 import Profile from "../images/Profile.JPG"
 
+
 const About = () => {  
   return (
     <>

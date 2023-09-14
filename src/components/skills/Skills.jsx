@@ -3,7 +3,8 @@ import Mongologo from "../images/Mongologo.png"
 import Reactlogo from "../images/Reactlogo.png"
 import Nodelogo from "../images/Nodelogo.png"
 import Tailwindlogo from "../images/Tailwindlogo.png"
-// import { Skill } from '../utilities/skillblock'
+import Skillcard from '../utilities/skillcard'
+
 
 const Skills = () => {
   return (
@@ -16,44 +17,14 @@ const Skills = () => {
           reveal relative transform translate-y-[100px] opacity-0 transition-all duration-[1500ms] ease-out 
           [&.active]:translate-y-0 [&.active]:opacity-100">Current Skills</p>
           <div className="h-1/3 md:h-64 lg:h-80">
-            <div className="w-1/3 md:h-64 lg:h-80 inline-block">
-              <img className="w-1/2 h-auto mt-20 mb-0 mx-auto hover:scale-[1.3] reveal relative transform 
-              translate-y-[100px] opacity-0 transition-all duration-[1500ms] ease-out [&.active]:translate-y-0 
-              [&.active]:opacity-100" src={Nodelogo} alt="Node.js"></img>
-            </div>
-            <div className="w-1/3 md:h-64 lg:h-80  inline-block">
-              <img className="w-1/2 h-auto mt-20 mb-0 mx-auto hover:scale-[1.3] reveal relative transform 
-              translate-y-[100px] opacity-0 transition-all duration-[1500ms] ease-out [&.active]:translate-y-0 
-              [&.active]:opacity-100" src={Reactlogo} alt="React"></img>
-            </div>
-            <div className="w-1/3 md:h-64 lg:h-80  inline-block">
-              <img className="w-1/2 h-auto mt-20 mb-0 mx-auto hover:scale-[1.3] reveal relative transform 
-              translate-y-[100px] opacity-0 transition-all duration-[1500ms] ease-out [&.active]:translate-y-0 
-              [&.active]:opacity-100" src={Mongologo} alt="MongoDB"></img>
-            </div>
-            {/* <Skill src={Nodelogo} alt="Node.js"/>
-            <Skill src={Reactlogo} alt="React"/>
-            <Skill src={Mongologo} alt="MongoDB"/> */}
+            <Skillcard src={Nodelogo} alt={"Node.js"} />
+            <Skillcard src={Reactlogo} alt={"React"} />
+            <Skillcard src={Mongologo} alt={"MongoDB"} />
           </div>
           <div className="h-1/3 md:h-64 lg:h-80">
-            <div className="w-1/3 md:h-64 lg:h-80 inline-block">
-              {/* <img className="w-1/2 h-auto mt-20 mb-0 mx-auto hover:scale-[1.3] reveal relative transform 
-              translate-y-[100px] opacity-0 transition-all duration-[1500ms] ease-out [&.active]:translate-y-0 
-              [&.active]:opacity-100" src={Nodelogo} alt="Node.js"></img> */}
-            </div>
-            <div className="w-1/3 md:h-64 lg:h-80  inline-block">
-              <img className="w-4/5 h-auto mt-20 mb-0 mx-auto hover:scale-[1.3] reveal relative transform 
-              translate-y-[100px] opacity-0 transition-all duration-[1500ms] ease-out [&.active]:translate-y-0 
-              [&.active]:opacity-100" src={Tailwindlogo} alt="TailwindCSS"></img>
-            </div>
-            <div className="w-1/3 md:h-64 lg:h-80 inline-block">
-              {/* <img className="w-1/2 h-auto mt-20 mb-0 mx-auto hover:scale-[1.3] reveal relative transform 
-              translate-y-[100px] opacity-0 transition-all duration-[1500ms] ease-out [&.active]:translate-y-0 
-              [&.active]:opacity-100" src={Mongologo} alt="MongoDB"></img> */}
-            </div>
-            {/* <Skill src={Nodelogo} alt="Node.js"/>
-            <Skill src={Tailwindlogo} alt="TailwindCSS"/>
-            <Skill src={Mongologo} alt="MongoDB"/> */}
+            <Skillcard />
+            <Skillcard customWidth="w-2/3" src={Tailwindlogo} alt={"TailwindCSS"} />
+            <Skillcard />
           </div>
         </div>
       </div>
