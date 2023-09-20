@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/Resume/static/css/main.5ef119d5.css",
-    "main.js": "/Resume/static/js/main.2aa944df.js",
+    "main.css": "/Resume/static/css/main.f50a22d2.css",
+    "main.js": "/Resume/static/js/main.a7975885.js",
     "static/media/Scenery.jpeg": "/Resume/static/media/Scenery.5e14aa0ac318a1404a4c.jpeg",
     "static/media/Street.jpeg": "/Resume/static/media/Street.852dc592f201a717e02d.jpeg",
     "static/media/Ragdoll.jpeg": "/Resume/static/media/Ragdoll.8c873e757859ea9c4ddb.jpeg",
     "static/media/Profile.JPG": "/Resume/static/media/Profile.ef7c8ae9018d42c503c4.JPG",
     "static/media/Tracksample.jpeg": "/Resume/static/media/Tracksample.a303cdaa8e511c624ad6.jpeg",
     "static/media/Corgi.jpeg": "/Resume/static/media/Corgi.dbc0da46c6168dfcc12e.jpeg",
+    "static/media/foodpanda.png": "/Resume/static/media/foodpanda.b7f12665e6899c3232a1.png",
     "static/media/Reactlogo.png": "/Resume/static/media/Reactlogo.cb383f7be127b0183272.png",
     "static/media/Nodelogo.png": "/Resume/static/media/Nodelogo.d5cd01a465362fcd07f7.png",
     "static/media/Tailwindlogo.png": "/Resume/static/media/Tailwindlogo.db57d85a2a71027c6bd2.png",
     "index.html": "/Resume/index.html",
-    "main.5ef119d5.css.map": "/Resume/static/css/main.5ef119d5.css.map",
-    "main.2aa944df.js.map": "/Resume/static/js/main.2aa944df.js.map"
+    "main.f50a22d2.css.map": "/Resume/static/css/main.f50a22d2.css.map",
+    "main.a7975885.js.map": "/Resume/static/js/main.a7975885.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ef119d5.css",
-    "static/js/main.2aa944df.js"
+    "static/css/main.f50a22d2.css",
+    "static/js/main.a7975885.js"
   ]
 }
