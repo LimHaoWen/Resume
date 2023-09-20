@@ -1,5 +1,6 @@
 import React from "react"
 import Arrow from "../images/Arrow.png"
+import Expcard from "../utilities/expcard"
 
 
 const Experience = () => {
@@ -26,9 +27,12 @@ const Experience = () => {
               </div>
             </div>
             <div className="w-1/2 h-full float-right">
-              <p className="mt-80 text-lg text-justify">As a mechanical engineering graduate, I have yet to gain real 
-              industry experience and am looking for the opportunity to gain some. Contact me if you feel that 
-              I am potentially cut out for a role!</p>
+              <Expcard className="mt-8" 
+                       company="foodpanda"
+                       period="Oct 2023 / Oct 2023" 
+                       role="Software Engineer Trainee (backend)"
+                       description="I am still awaiting to start this journey, hear my experiences in awhile!"
+                       />                   
             </div>
           </div>
       </div>
@@ -39,12 +43,14 @@ const Experience = () => {
         <p className="text-2xl mt-0 pl-5 reveal relative transform translate-y-[100px] opacity-0 transition-all 
         duration-[1500ms] ease-out [&.active]:translate-y-0 [&.active]:opacity-100">Past work experience</p>
         <div className="w-full h-[45%] float-right">
-          <p className="mt-20 px-5 text-justify reveal relative transform translate-y-[100px] opacity-0 
-          transition-all duration-[1500ms] ease-out [&.active]:translate-y-0 [&.active]:opacity-100">
-          I have yet to gain real industry experience and am looking for the opportunity to gain some. 
-          Please contact me if you feel that I am potentially cut out for a role!</p>
+          <Expcard className="mt-8" 
+                       company="foodpanda"
+                       period="Oct 2023 / Oct 2023" 
+                       role="Software Engineer Trainee (backend)"
+                       description="I am still awaiting to start this journey, hear my experiences in awhile!"
+                       />  
         </div>
-        <div className="h-[30%] w-[11rem] mt-60 sticky top-[30px] mx-auto reveal transform translate-y-[100px] 
+        <div className="h-10 w-[11rem] mt-72 sticky top-[30px] mx-auto reveal transform translate-y-[100px] 
         opacity-0 transition-all duration-[1500ms] ease-out [&.active]:translate-y-0 [&.active]:opacity-100 
         hover:scale-[1.3]">
           <a className="text-md text-black float-left" href="https://drive.google.com/file/d/1-DuJ6-kqdfWJnUkPyQ9pCFKiX1qEW_JR/view?usp=drive_link" 
