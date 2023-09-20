@@ -18,7 +18,7 @@ const Experience = () => {
               translate-y-[100px] opacity-0 transition-all duration-[1500ms] ease-out [&.active]:translate-y-0 
               [&.active]:opacity-100 hover:scale-[1.3]">
                 <a className="text-md md:max-lg:text-lg lg:text-xl xl:text-2xl text-black float-left" 
-                href="https://drive.google.com/file/d/1r2sA4xA_E9d_5p0yevSHIzVf7KO5JnOD/view?usp=drive_link" 
+                href="https://drive.google.com/file/d/1-DuJ6-kqdfWJnUkPyQ9pCFKiX1qEW_JR/view?usp=drive_link" 
                 target="_blank" rel="noreferrer">Browse full résumé
                 <img className="w-5 h-5 lg:w-6 lg:h-6 float-right md:max-lg:mt-[0.2rem] lg:mt-0 xl:mt-[0.1rem] 
                 md:ml-4 lg:ml-2 xl:ml-3" src={Arrow} alt="Arrow"></img>
