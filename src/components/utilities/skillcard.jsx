@@ -2,7 +2,7 @@ import React from "react"
 
 
 const Skillcard = ({ src, alt, customWidth }) => {
-    const cardWidth = `w-1/2 ${customWidth || ''}`;
+    const cardWidth = `w-1/2 ${customWidth || ''}`; // tailwind last item win approach
 
     return(
         <>

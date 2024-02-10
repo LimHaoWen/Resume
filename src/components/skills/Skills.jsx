@@ -2,8 +2,11 @@ import React from 'react'
 import Mongologo from "../images/Mongologo.png"
 import Reactlogo from "../images/Reactlogo.png"
 import Nodelogo from "../images/Nodelogo.png"
+import Gologo from "../images/Gologo.jpeg"
+import MySQL from "../images/MySQLLogo.png"
 import Tailwindlogo from "../images/Tailwindlogo.png"
 import Skillcard from '../utilities/skillcard'
+
 
 
 const Skills = () => {
@@ -17,14 +20,14 @@ const Skills = () => {
           reveal relative transform translate-y-[100px] opacity-0 transition-all duration-[1500ms] ease-out 
           [&.active]:translate-y-0 [&.active]:opacity-100">Current Skills</p>
           <div className="h-1/3 md:h-64 lg:h-80">
-            <Skillcard src={Nodelogo} alt={"Node.js"} />
-            <Skillcard src={Reactlogo} alt={"React"} />
-            <Skillcard src={Mongologo} alt={"MongoDB"} />
+            <Skillcard src={Gologo} alt={"GO"}/>
+            <Skillcard customWidth="w-2/3" src={Tailwindlogo} alt={"TailwindCSS"}/>
+            <Skillcard src={MySQL} alt={"MySQL"}/>
           </div>
           <div className="h-1/3 md:h-64 lg:h-80">
-            <Skillcard />
-            <Skillcard customWidth="w-2/3" src={Tailwindlogo} alt={"TailwindCSS"} />
-            <Skillcard />
+            <Skillcard src={Nodelogo} alt={"Node.js"}/>
+            <Skillcard src={Reactlogo} alt={"React"}/>
+            <Skillcard src={Mongologo} alt={"MongoDB"}/>
           </div>
         </div>
       </div>

@@ -2,10 +2,10 @@ import React from "react"
 import foodpanda from "../images/foodpanda.png"
 
 
-const Expcard = ({ className, company, period, role, description }) => {
+const Expcard = ({ mt, h, company, period, role, description }) => {
   return (
     <>
-    <div className={`${className} flex w-[90%] mx-auto md:w-full h-56 border-solid border-y-2 
+    <div className={`${mt} ${h} flex w-[90%] mx-auto md:w-full border-solid border-y-2 
     border-gray reveal relative transform translate-y-[100px] opacity-0 transition-all 
     duration-[1500ms] ease-out [&.active]:translate-y-0 [&.active]:opacity-100`}>
         <div className="flex float-left w-[20%] mt-10 justify-left">
