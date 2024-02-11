@@ -32,7 +32,7 @@ const Experience = () => {
                        company="foodpanda"
                        period="Oct 2023 / Current" 
                        role="Software Engineer Trainee (backend)"
-                       description="I gained proficiency in Golang, Redis, MySQL, and other tech services. I actively 
+                       description="I gained proficiency in Golang, MySQL, Redis, and other tech services. I actively 
                        contributed to developing robust endpoints for new features, bug fixes, and addressing 
                        technical debt. Collaborating seamlessly with my team, I participated in discussions and 
                        played a role in formulating long-term solutions."
@@ -42,23 +42,23 @@ const Experience = () => {
       </div>
       
       {/* Mobile screens */}
-      <div className="h-[80vh] w-screen md:hidden relative before:content-[''] before:absolute before:bg-gray 
+      <div className="h-[90vh] w-screen md:hidden relative before:content-[''] before:absolute before:bg-gray 
       before:left-[50%] before:bottom-[70px] before:translate-x-[-50%] before:w-[80%] before:h-0.5">
         <p className="text-2xl pl-5 reveal relative transform translate-y-[100px] opacity-0 transition-all 
         duration-[1500ms] ease-out [&.active]:translate-y-0 [&.active]:opacity-100">Past work experience</p>
-        <div className="w-full h-[60%]">
+        <div className="w-full h-[65%]">
           <Expcard  mt="mt-12"
                     h="h-[90%]"
                     company="foodpanda"
                     period="Oct 2023 / Current"
                     role="Software Engineer Trainee (backend)"
-                    description="I gained proficiency in Golang, Redis, MySQL, and other tech services. I actively 
+                    description="I gained proficiency in Golang, MySQL, Redis, and other tech services. I actively 
                     contributed to developing robust endpoints for new features, bug fixes, and addressing 
                     technical debt. Collaborating seamlessly with my team, I participated in discussions and 
                     played a role in formulating long-term solutions."
                     />  
         </div>
-        <div className="h-24 w-[11rem] mt-12 sticky top-[30px] mx-auto reveal transform translate-y-[100px] 
+        <div className="h-40 w-[11rem] mt-3 sticky top-[30px] mx-auto reveal transform translate-y-[100px] 
         opacity-0 transition-all duration-[1500ms] ease-out [&.active]:translate-y-0 [&.active]:opacity-100 
         hover:scale-[1.3]">
           <a className="text-md text-black float-left" href="https://drive.google.com/file/d/1-DuJ6-kqdfWJnUkPyQ9pCFKiX1qEW_JR/view?usp=drive_link" 
