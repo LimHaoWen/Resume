@@ -7,6 +7,7 @@ import Projects from "./components/projects/Projects"
 import Skills from "./components/skills/Skills"
 import { debounce } from "./components/utilities/debounce"
 import { reveal } from "./components/utilities/reveal"
+import DarkMode from "./components/utilities/darkmode"
 
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
         <Projects />
         <Skills />
         <Footer />
+        <DarkMode />
     </>
   )
 }

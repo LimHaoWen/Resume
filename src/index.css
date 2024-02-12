@@ -13,3 +13,7 @@
     list-style: none;
     text-decoration: none;
 }
+
+.dark {
+    background-color: #020617;
+}
