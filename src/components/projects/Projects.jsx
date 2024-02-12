@@ -87,11 +87,11 @@ const Projects = () => {
           [&.active]:translate-y-0 [&.active]:opacity-100 dark:text-white">Projects</p>
           <div id="projectTrack" className="flex lg:w-[150vw] absolute gap-5 lg:gap-8 top-[15%] left-5 lg:left-[2%] transform-x-0 
           -transform-y-1/2" data-mouse-down-at="0" data-prev-percentage="0">
-              <Projectcard src={ Sg } />
-              <Projectcard src={ Cat } />
-              <Projectcard src={ Street } />
-              <Projectcard src={ Corgi } />
-              <Projectcard src={ Scene } />
+              <Projectcard src={ Sg } link="https://www.google.com.sg/?safe=active&ssui=on"/>
+              <Projectcard src={ Cat } link="https://www.google.com.sg/?safe=active&ssui=on"/>
+              <Projectcard src={ Street } link="https://www.google.com.sg/?safe=active&ssui=on"/>
+              <Projectcard src={ Corgi } link="https://www.google.com.sg/?safe=active&ssui=on"/>
+              <Projectcard src={ Scene } link="https://www.google.com.sg/?safe=active&ssui=on"/>
           </div>
         </div>
       </div>
