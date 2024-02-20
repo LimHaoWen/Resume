@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Resume/static/css/main.a69fab7a.css",
-    "main.js": "/Resume/static/js/main.50ab0e0c.js",
+    "main.css": "/Resume/static/css/main.cdbe374f.css",
+    "main.js": "/Resume/static/js/main.fe4d1602.js",
     "static/media/Scenery.jpeg": "/Resume/static/media/Scenery.5e14aa0ac318a1404a4c.jpeg",
     "static/media/Street.jpeg": "/Resume/static/media/Street.852dc592f201a717e02d.jpeg",
     "static/media/Ragdoll.jpeg": "/Resume/static/media/Ragdoll.8c873e757859ea9c4ddb.jpeg",
@@ -15,11 +15,11 @@
     "static/media/Nodelogo.png": "/Resume/static/media/Nodelogo.d5cd01a465362fcd07f7.png",
     "static/media/Tailwindlogo.png": "/Resume/static/media/Tailwindlogo.db57d85a2a71027c6bd2.png",
     "index.html": "/Resume/index.html",
-    "main.a69fab7a.css.map": "/Resume/static/css/main.a69fab7a.css.map",
-    "main.50ab0e0c.js.map": "/Resume/static/js/main.50ab0e0c.js.map"
+    "main.cdbe374f.css.map": "/Resume/static/css/main.cdbe374f.css.map",
+    "main.fe4d1602.js.map": "/Resume/static/js/main.fe4d1602.js.map"
   },
   "entrypoints": [
-    "static/css/main.a69fab7a.css",
-    "static/js/main.50ab0e0c.js"
+    "static/css/main.cdbe374f.css",
+    "static/js/main.fe4d1602.js"
   ]
 }
