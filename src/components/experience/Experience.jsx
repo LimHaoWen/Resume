@@ -52,10 +52,10 @@ const Experience = () => {
           <Expcard  mt="mt-12"
                     h="h-[90%]"
                     company="foodpanda"
-                    period="Oct 2023 / Current"
+                    period="Oct 2023 / Mar 2023"
                     role="Software Engineer Trainee (backend)"
                     description="I gained proficiency in Golang, MySQL, Redis, and other tech services. I actively 
-                    contributed to developing robust endpoints for new features, bug fixes, and addressing 
+                    contributed to developing robust endpoints for new features, continous improvements, bug fixes, and addressing 
                     technical debt. Collaborating seamlessly with my team, I participated in discussions and 
                     played a role in formulating long-term solutions."
                     src={foodpanda}
