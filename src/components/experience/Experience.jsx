@@ -20,7 +20,7 @@ const Experience = () => {
               translate-y-[100px] opacity-0 transition-all duration-[1500ms] ease-out [&.active]:translate-y-0 
               [&.active]:opacity-100 hover:scale-[1.3]">
                 <a className="text-md md:max-lg:text-lg lg:text-xl xl:text-2xl text-black float-left dark:text-white" 
-                href="https://drive.google.com/file/d/1-DuJ6-kqdfWJnUkPyQ9pCFKiX1qEW_JR/view?usp=drive_link" 
+                href="https://docs.google.com/document/d/1eXCiSt7_N2vck01INt5zCuSzNuEIZPzw6dHAtn0gPIQ/edit?usp=drive_link" 
                 target="_blank" rel="noreferrer">Browse full résumé
                 <GoArrowUpRight className="w-5 h-5 lg:w-7 lg:h-7 float-right md:max-lg:mt-[0.2rem] lg:mt-0 xl:mt-[0.1rem] 
                 md:ml-4 lg:ml-1 xl:ml-3 dark:fill-white dark:stroke-white"/>
@@ -64,7 +64,7 @@ const Experience = () => {
         <div className="h-40 w-[11rem] mt-3 sticky top-[30px] mx-auto reveal transform translate-y-[100px] 
         opacity-0 transition-all duration-[1500ms] ease-out [&.active]:translate-y-0 [&.active]:opacity-100 
         hover:scale-[1.3]">
-          <a className="text-md text-black float-left dark:text-white" href="https://drive.google.com/file/d/1-DuJ6-kqdfWJnUkPyQ9pCFKiX1qEW_JR/view?usp=drive_link" 
+          <a className="text-md text-black float-left dark:text-white" href="https://docs.google.com/document/d/1eXCiSt7_N2vck01INt5zCuSzNuEIZPzw6dHAtn0gPIQ/edit?usp=drive_link" 
           target="_blank" rel="noreferrer">Browse full résumé</a>
           <GoArrowUpRight className="w-6 h-6 float-right dark:fill-white dark:stroke-white"/>
         </div>
