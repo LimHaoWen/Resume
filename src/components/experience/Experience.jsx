@@ -8,7 +8,7 @@ const Experience = () => {
   return (
     <>
     {/* md screen and up */}
-      <div className="hidden md:flex md:md:max-lg:h-screen lg:max-xl:h-[100vh] xl:h-[70vh] w-screen bg-white dark:bg-black">
+      <div className="hidden md:flex md:max-lg:h-screen lg:max-xl:h-[100vh] xl:h-[70vh] w-screen bg-white dark:bg-black">
         <div className="h-full md:max-lg:w-4/5 lg:max-xl:w-[68%] xl:w-[72%] bg-white mx-auto relative z-10 
         before:content-[''] before:absolute before:bg-gray before:left-[50%] before:bottom-[70px] 
         before:translate-x-[-50%] before:w-[80%] before:h-0.5 dark:bg-black">
@@ -29,7 +29,6 @@ const Experience = () => {
             </div>
             <div className="w-1/2 h-full float-right">
               <Expcard mt="mt-8"
-                       h="h-64" 
                        company="foodpanda"
                        period="Oct 2023 / Mar 2024" 
                        role="Software Engineer Trainee (backend)"
@@ -38,7 +37,8 @@ const Experience = () => {
                        technical debt. Collaborating seamlessly with my team, I participated in discussions and 
                        played a role in formulating long-term solutions."
                       src={foodpanda}
-                       />                   
+                       />
+              {/* <Expcard mt="mt-[-2px]"/> */}
             </div>
           </div>
       </div>

@@ -17,7 +17,7 @@ const Header = () => {
   const [visible, setVisible] = useState(true);
 
   const handleScroll = debounce(() => {
-    const currentScrollPos = window.pageYOffset;
+    const currentScrollPos = window.scrollY;
     setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 100) || currentScrollPos < 20);
     setPrevScrollPos(currentScrollPos);
   }, 100);
