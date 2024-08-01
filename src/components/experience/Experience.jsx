@@ -50,7 +50,7 @@ const Experience = () => {
         duration-[1500ms] ease-out [&.active]:translate-y-0 [&.active]:opacity-100 dark:text-white">Past work experience</p>
         <div className="w-full h-[65%]">
           <Expcard  mt="mt-12"
-                    h="h-[90%]"
+                    h="h-[80%]"
                     company="foodpanda"
                     period="Oct 2023 / Mar 2024"
                     role="Software Engineer Trainee (backend)"
