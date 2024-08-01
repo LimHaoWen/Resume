@@ -1,6 +1,6 @@
 import React, { useEffect } from "react"
 import Projectcard from "../utilities/projectcard"
-import Sg from "../images/Tracksample.jpeg"
+import Attendance from "../images/Attendance.png"
 import Cat from "../images/Ragdoll.jpeg"
 import Corgi from "../images/Corgi.jpeg"
 import Street from "../images/Street.jpeg"
@@ -87,11 +87,11 @@ const Projects = () => {
           [&.active]:translate-y-0 [&.active]:opacity-100 dark:text-white">Projects</p>
           <div id="projectTrack" className="flex lg:w-[150vw] absolute gap-5 lg:gap-8 top-[15%] left-5 lg:left-[2%] transform-x-0 
           -transform-y-1/2" data-mouse-down-at="0" data-prev-percentage="0">
-              <Projectcard src={ Sg } link="https://www.google.com.sg/?safe=active&ssui=on"/>
-              <Projectcard src={ Cat } link="https://www.google.com.sg/?safe=active&ssui=on"/>
-              <Projectcard src={ Street } link="https://www.google.com.sg/?safe=active&ssui=on"/>
-              <Projectcard src={ Corgi } link="https://www.google.com.sg/?safe=active&ssui=on"/>
-              <Projectcard src={ Scene } link="https://www.google.com.sg/?safe=active&ssui=on"/>
+              <Projectcard src={ Attendance } link="https://github.com/LimHaoWen/attendance-app" description={"Attendance app that supports export/import of attendance lists"}/>
+              <Projectcard src={ Cat } link="https://www.google.com.sg/?safe=active&ssui=on" description={"To be filled"}/>
+              <Projectcard src={ Street } link="https://www.google.com.sg/?safe=active&ssui=on" description={"To be filled"}/>
+              <Projectcard src={ Corgi } link="https://www.google.com.sg/?safe=active&ssui=on" description={"To be filled"}/>
+              <Projectcard src={ Scene } link="https://www.google.com.sg/?safe=active&ssui=on" description={"To be filled"}/>
           </div>
         </div>
       </div>
