@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Resume/static/css/main.492067b8.css",
-    "main.js": "/Resume/static/js/main.79b7ebd0.js",
+    "main.css": "/Resume/static/css/main.eac41588.css",
+    "main.js": "/Resume/static/js/main.f080243d.js",
     "static/media/Scenery.jpeg": "/Resume/static/media/Scenery.7dc6afaef13a321b2de5.jpeg",
+    "static/media/Attendance.png": "/Resume/static/media/Attendance.78aaba9b8cab42d46a7a.png",
     "static/media/Profile.jpeg": "/Resume/static/media/Profile.b702eee7d3568895432e.jpeg",
-    "static/media/Tracksample.jpeg": "/Resume/static/media/Tracksample.a303cdaa8e511c624ad6.jpeg",
     "static/media/Street.jpeg": "/Resume/static/media/Street.b5bfe54bb455baa4ba33.jpeg",
     "static/media/Ragdoll.jpeg": "/Resume/static/media/Ragdoll.b12b77be40f9c709db2f.jpeg",
     "static/media/Corgi.jpeg": "/Resume/static/media/Corgi.3895d0d5c6386421120d.jpeg",
@@ -15,11 +15,11 @@
     "static/media/Gologo.png": "/Resume/static/media/Gologo.8a5298d5f355e86eeb01.png",
     "static/media/Tailwindlogo.png": "/Resume/static/media/Tailwindlogo.db57d85a2a71027c6bd2.png",
     "index.html": "/Resume/index.html",
-    "main.492067b8.css.map": "/Resume/static/css/main.492067b8.css.map",
-    "main.79b7ebd0.js.map": "/Resume/static/js/main.79b7ebd0.js.map"
+    "main.eac41588.css.map": "/Resume/static/css/main.eac41588.css.map",
+    "main.f080243d.js.map": "/Resume/static/js/main.f080243d.js.map"
   },
   "entrypoints": [
-    "static/css/main.492067b8.css",
-    "static/js/main.79b7ebd0.js"
+    "static/css/main.eac41588.css",
+    "static/js/main.f080243d.js"
   ]
 }
