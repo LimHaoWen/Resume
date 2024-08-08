@@ -51,28 +51,12 @@ const Projects = () => {
     
     window.onmouseup = e => handleOnUp(e);
     
-    window.ontouchend = e => handleOnUp(e.touches[0]);
+    window.ontouchend = e => handleOnUp(e.changedTouches[0]);
     
     window.onmousemove = e => handleOnMove(e);
     
     window.ontouchmove = e => handleOnMove(e.touches[0]);
 
-  }, []);
-
-  /* Hovering effect for individual project */
-  useEffect(() => {
-      const cards = document.getElementsByClassName("card");
-      const project = document.getElementsByClassName("project");
-      console.log(project);
-      console.log(cards); 
-      for (let i = 0; i < cards.length; i++) {
-        cards[i].addEventListener("mouseover", function mouseOver(){
-            project[i].style.visibility = "visible";
-        });
-        cards[i].addEventListener("mouseout", function mouseOut(){
-            project[i].style.visibility = "hidden";
-        });
-      }      
   }, []);
 
   return (
