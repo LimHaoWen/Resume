@@ -18,7 +18,7 @@ const DarkModeToggle = () => {
     return (
         <div className={`sticky bottom-0 left-0 h-14 w-14 z-40 dark-mode-toggle`}>
             <button className="h-14 w-14" onClick={toggleDarkMode}>
-            {isDarkMode ? <MdLightMode class="h-8 w-8 ml-3 fill-white"/> : <MdDarkMode class="h-8 w-8 ml-3"/>}
+            {isDarkMode ? <MdLightMode className="h-8 w-8 ml-3 fill-white"/> : <MdDarkMode className="h-8 w-8 ml-3"/>}
             </button>
         </div>
     );

@@ -43,19 +43,25 @@ const Projects = () => {
       }
     }
 
-    /* For touch events */
+  // Add event listeners
+  window.addEventListener('mousedown', handleOnDown);
+  window.addEventListener('mouseup', handleOnUp);
+  window.addEventListener('mousemove', handleOnMove);
+  
+  window.addEventListener('touchstart', e => handleOnDown(e.touches[0]));
+  window.addEventListener('touchend', e => handleOnUp(e.changedTouches[0]));
+  window.addEventListener('touchmove', e => handleOnMove(e.touches[0]));
+
+  // Cleanup function to remove event listeners
+  return () => {
+    window.removeEventListener('mousedown', handleOnDown);
+    window.removeEventListener('mouseup', handleOnUp);
+    window.removeEventListener('mousemove', handleOnMove);
     
-    window.onmousedown = e => handleOnDown(e);
-    
-    window.ontouchstart = e => handleOnDown(e.touches[0]);
-    
-    window.onmouseup = e => handleOnUp(e);
-    
-    window.ontouchend = e => handleOnUp(e.changedTouches[0]);
-    
-    window.onmousemove = e => handleOnMove(e);
-    
-    window.ontouchmove = e => handleOnMove(e.touches[0]);
+    window.removeEventListener('touchstart', e => handleOnDown(e.touches[0]));
+    window.removeEventListener('touchend', e => handleOnUp(e.changedTouches[0]));
+    window.removeEventListener('touchmove', e => handleOnMove(e.touches[0]));
+  };
 
   }, []);
 
