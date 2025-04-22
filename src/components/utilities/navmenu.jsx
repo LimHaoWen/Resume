@@ -1,6 +1,7 @@
 import { Fragment } from 'react'
 import { Menu, MenuButton, MenuItem, MenuItems, Transition } from '@headlessui/react'
-import {FaLinkedinIn, FaInstagram, FaGithub} from 'react-icons/fa'
+import {FaLinkedinIn, FaGithub} from 'react-icons/fa'
+import { FaMedium } from "react-icons/fa6"
 import { HiOutlineMail } from 'react-icons/hi'
 
 function classNames(...classes) {
@@ -52,13 +53,13 @@ export default function Navmenu() {
             <MenuItem>
               {({ focus }) => (
                 <a
-                  href="https://www.instagram.com/lin.haowen/"
+                  href="https://medium.com/@lim.haowen"
                   className={classNames(
                    focus ? 'bg-lightgray text-charcoal' : 'text-black dark:text-white',
                     'block px-4 py-2 text-sm'
                   )}
                 >
-                  <FaInstagram className="inline-block h-5 mr-2 mb-[0.15rem]"/> Instagram
+                  <FaMedium className="inline-block h-5 mr-2 mb-[0.15rem]"/> Medium
                 </a>
               )}
             </MenuItem>
