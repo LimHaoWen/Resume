@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import { FaLinkedinIn, FaInstagram, FaGithub } from 'react-icons/fa'
+import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
+import { FaMedium } from 'react-icons/fa6'
 import { debounce } from '../utilities/debounce'
 import Navmenu from '../utilities/navmenu'
 
@@ -45,7 +46,7 @@ const Header = () => {
           className="hover:fill-gray hover:stroke-gray dark:fill-white" /></a>
         </li>
         <li>
-          <a href="https://www.instagram.com/lin.haowen/" target="_blank" rel="noopener noreferrer"><FaInstagram 
+          <a href="https://medium.com/@lim.haowen" target="_blank" rel="noopener noreferrer"><FaMedium 
           className="hover:fill-gray hover:stroke-gray dark:fill-white"/></a>
         </li>
         <li>

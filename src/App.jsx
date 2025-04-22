@@ -5,6 +5,7 @@ import About from "./components/about/About"
 import Experience from "./components/experience/Experience"
 import Projects from "./components/projects/Projects"
 import Skills from "./components/skills/Skills"
+import Blogs from "./components/blog/Blog"
 import { debounce } from "./components/utilities/debounce"
 import { reveal } from "./components/utilities/reveal"
 import DarkMode from "./components/utilities/darkmode"
@@ -21,6 +22,7 @@ const App = () => {
         <Experience />
         <Projects />
         <Skills />
+        <Blogs />
         <Footer />
         <DarkMode />
     </>
