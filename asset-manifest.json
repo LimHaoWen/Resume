@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/Resume/static/css/main.82f9c870.css",
-    "main.js": "/Resume/static/js/main.30118f03.js",
+    "main.css": "/Resume/static/css/main.6f51753c.css",
+    "main.js": "/Resume/static/js/main.f9542a6b.js",
     "static/media/Attendance.png": "/Resume/static/media/Attendance.78aaba9b8cab42d46a7a.png",
     "static/media/Profile.jpeg": "/Resume/static/media/Profile.b702eee7d3568895432e.jpeg",
+    "static/media/Prism.jpg": "/Resume/static/media/Prism.dee74d45aa5febbf2135.jpg",
     "static/media/Street.jpeg": "/Resume/static/media/Street.b5bfe54bb455baa4ba33.jpeg",
     "static/media/Laksa.webp": "/Resume/static/media/Laksa.62d69f7b7259435c6220.webp",
     "static/media/Ragdoll.jpeg": "/Resume/static/media/Ragdoll.b12b77be40f9c709db2f.jpeg",
@@ -15,11 +16,11 @@
     "static/media/Tailwindlogo.png": "/Resume/static/media/Tailwindlogo.db57d85a2a71027c6bd2.png",
     "static/media/NextLogo.webp": "/Resume/static/media/NextLogo.092074e51dafdf2fbf22.webp",
     "index.html": "/Resume/index.html",
-    "main.82f9c870.css.map": "/Resume/static/css/main.82f9c870.css.map",
-    "main.30118f03.js.map": "/Resume/static/js/main.30118f03.js.map"
+    "main.6f51753c.css.map": "/Resume/static/css/main.6f51753c.css.map",
+    "main.f9542a6b.js.map": "/Resume/static/js/main.f9542a6b.js.map"
   },
   "entrypoints": [
-    "static/css/main.82f9c870.css",
-    "static/js/main.30118f03.js"
+    "static/css/main.6f51753c.css",
+    "static/js/main.f9542a6b.js"
   ]
 }
