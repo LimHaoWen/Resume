@@ -27,7 +27,7 @@ const Blogs = () => {
                 alt={"MediumArticle"}
                 customWidth={"w-[65%]"}
                 leftRightMargin={"mr-10"}
-                title={"Why error handling deserves more love"}
+                title={"How to handle errors properly: A developer's guide"}
                 />
             </div>
             <div className="h-1/3 md:h-64 lg:h-80">
