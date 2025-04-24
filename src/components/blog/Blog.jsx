@@ -1,5 +1,6 @@
 import Blogcard from "../utilities/blogcard";
 import Prism from "../images/Prism.jpg";
+import ErrorHandling from "../images/ErrorHandling.jpg"
 
 const Blogs = () => {
     return (
@@ -18,16 +19,16 @@ const Blogs = () => {
                 alt={"MediumArticle"}
                 customWidth={"w-[65%]"}
                 leftRightMargin={"ml-10"}
-                title={"How I Learned to Stop Worring and Use Prisma Transactions Right"}
+                title={"How I learned to stop worring and use prisma transactions right"}
                 />
-              {/* <Blogcard 
-                href={"https://medium.com/@limhaowen097/how-i-learned-to-stop-worrying-and-use-prisma-transactions-right-d9fa609bbc97"} 
-                src={ Prism } 
+              <Blogcard 
+                href={"https://medium.com/@lim.haowen/why-error-handling-deserves-more-love-251556b583c7"} 
+                src={ ErrorHandling } 
                 alt={"MediumArticle"}
                 customWidth={"w-[65%]"}
                 leftRightMargin={"mr-10"}
-                title={"How I Learned to Stop Worring and Use Prisma Transactions Right"}
-                /> */}
+                title={"Why error handling deserves more love"}
+                />
             </div>
             <div className="h-1/3 md:h-64 lg:h-80">
               {/* <Blogcard 
