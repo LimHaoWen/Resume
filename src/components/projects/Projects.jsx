@@ -75,9 +75,10 @@ const Projects = () => {
           <p className="h-10 mt-0 pl-5 text-2xl md:max-lg:text-3xl lg:text-4xl xl:text-5xl md:mt-8 
           reveal relative transform translate-y-[100px] opacity-0 transition-all duration-[1500ms] ease-out 
           [&.active]:translate-y-0 [&.active]:opacity-100 dark:text-white">Projects</p>
-          <div id="projectTrack" className="flex lg:w-[150vw] absolute gap-5 lg:gap-8 top-[15%] left-5 lg:left-[2%] transform-x-0 
-          -transform-y-1/2" data-mouse-down-at="0" data-prev-percentage="0">
-              <Projectcard src={ Laksa } link="https://github.com/LimHaoWen/JLW" description={"Family business app for selling laksa, featuring a loyalty points system for users to redeem products"}/>
+          <div id="projectTrack" className="flex lg:w-[150vw] absolute gap-5 lg:gap-8 top-[15%] left-5 lg:left-[2%] 
+          -transform-y-1/2 reveal opacity-0 transition-all duration-[1500ms] ease-out [&.active]:opacity-100" 
+          data-mouse-down-at="0" data-prev-percentage="0">
+              <Projectcard src={ Laksa } link="https://github.com/LimHaoWen/JLW" description={"Family business app for selling laksa, featuring a loyalty points system"}/>
               <Projectcard src={ Attendance } link="https://github.com/LimHaoWen/attendance-app" description={"Attendance app that supports export/import of attendance lists"}/>
               <Projectcard src={ Cat } link="https://www.google.com.sg/?safe=active&ssui=on" description={"To be filled"}/>
               <Projectcard src={ Street } link="https://www.google.com.sg/?safe=active&ssui=on" description={"To be filled"}/>

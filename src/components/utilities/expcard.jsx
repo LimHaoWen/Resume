@@ -4,7 +4,7 @@ import React from "react"
 const Expcard = ({ mt, h, company, period, role, description, src }) => {
   return (
     <>
-    <div className={`${mt} ${h} lg:h-[34%] xl:h-[25%] flex w-[90%] mx-auto md:w-full border-solid border-y-2 
+    <div className={`${mt} ${h} md:h-[25%] lg:h-[34%] xl:h-[25%] flex w-[90%] mx-auto md:w-full border-solid border-y-2 
     border-gray reveal relative transform translate-y-[100px] opacity-0 transition-all 
     duration-[1500ms] ease-out [&.active]:translate-y-0 [&.active]:opacity-100`}>
         <div className="flex float-left w-[20%] mt-10 justify-left">
