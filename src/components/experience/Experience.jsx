@@ -20,7 +20,7 @@ const Experience = () => {
               translate-y-[100px] opacity-0 transition-all duration-[1500ms] ease-out [&.active]:translate-y-0 
               [&.active]:opacity-100 hover:scale-[1.3]">
                 <a className="text-md md:max-lg:text-lg lg:text-xl xl:text-2xl text-black float-left dark:text-white" 
-                href="https://docs.google.com/document/d/1M2Xypin3QxIH1XFZ2_OkJw-5-BcSrklrKyol5Vm7GKA/edit?usp=sharing" 
+                href="https://docs.google.com/document/d/1unwNV2UpejiQb4n4H2GuV9bn7rUnABp_mf81GhEZy1A/edit?usp=sharing" 
                 target="_blank" rel="noreferrer">Browse full résumé
                 <GoArrowUpRight className="w-5 h-5 lg:w-7 lg:h-7 float-right md:max-lg:mt-[0.2rem] lg:mt-0 xl:mt-[0.1rem] 
                 md:ml-4 lg:ml-1 xl:ml-3 dark:fill-white dark:stroke-white"/>

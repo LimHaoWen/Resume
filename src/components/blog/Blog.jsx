@@ -12,7 +12,8 @@ const Blogs = () => {
             <p className="mt-0 md:mb-8 pl-5 text-2xl md:max-lg:text-3xl lg:text-4xl xl:text-5xl md:mt-8 
             reveal relative transform translate-y-[100px] opacity-0 transition-all duration-[1500ms] ease-out 
             [&.active]:translate-y-0 [&.active]:opacity-100 dark:text-white">Blogs</p>
-            <div className="h-1/3 md:h-64 lg:h-[40%]">
+            <div className="h-1/3 md:h-64 lg:h-[40%] reveal transform translate-y-[100px] opacity-0 transition-all duration-[1500ms] ease-out 
+            [&.active]:translate-y-0 [&.active]:opacity-100">
               <Blogcard 
                 href={"https://medium.com/@limhaowen097/how-i-learned-to-stop-worrying-and-use-prisma-transactions-right-d9fa609bbc97"} 
                 src={ Prism } 
