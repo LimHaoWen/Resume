@@ -1,6 +1,3 @@
-import React from "react"
-
-
 const Projectcard = ({ src, link, description }) => {
     return (
         <>
