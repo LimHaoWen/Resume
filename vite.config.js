@@ -8,6 +8,7 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
+  base: '/Resume/',
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src/components", import.meta.url))
