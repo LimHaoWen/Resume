@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import particlesConfig from '../../../particlesConfig';
 
 const ParticlesBackground = () => {
   const styles = {
@@ -14,7 +15,7 @@ const ParticlesBackground = () => {
   };
 
   useEffect(() => {
-    window.particlesJS.load('particles-js', '/particlesConfig.json', () => {
+    window.particlesJS('particles-js', particlesConfig, () => {
       console.log('particles.js config loaded');
     });
   }, []);
