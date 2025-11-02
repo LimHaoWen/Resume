@@ -34,7 +34,8 @@
     "start": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "echo \"Run tests using vitest or jest\" && exit 0"
+    "test": "echo \"Run tests using vitest or jest\" && exit 0",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
