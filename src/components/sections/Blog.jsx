@@ -1,18 +1,18 @@
-import Blogcard from "../utilities/blogcard";
-import Prism from "../images/Prism.jpg";
-import ErrorHandling from "../images/ErrorHandling.jpg"
+import Blogcard from "@/cards/blogcard";
+import Prism from "/src/images/Prism.jpg";
+import ErrorHandling from "/src/images/ErrorHandling.jpg"
 
 const Blogs = () => {
     return (
       <>
-        <div className="h-[60vh] md:h-[60vh] lg:h-[100vh] xl:h-[70vh] w-screen flex bg-white z-10 dark:bg-black">
-          <div className="h-full md:max-lg:w-4/5 lg:w-[68%] xl:w-[72%] mx-auto relative z-10 bg-white dark:bg-black
-          before:content-[''] before:absolute before:bg-gray before:left-[50%] before:bottom-[2rem] 
+        <div className="h-[60vh] md:h-[60vh] lg:h-screen xl:h-[70vh] w-screen flex bg-transparent z-10 dark:bg-black">
+          <div className="h-full md:max-lg:w-4/5 lg:w-[68%] xl:w-[72%] mx-auto relative z-10 bg-transparent dark:bg-black
+          before:content-[''] before:absolute before:bg-darkgray before:left-[50%] before:bottom-8 
           before:translate-x-[-50%] before:w-[80%] before:h-0.5">
             <p className="mt-0 md:mb-8 pl-5 text-2xl md:max-lg:text-3xl lg:text-4xl xl:text-5xl md:mt-8 
-            reveal relative transform translate-y-[100px] opacity-0 transition-all duration-[1500ms] ease-out 
+            reveal relative transform translate-y-[100px] opacity-0 transition-all duration-1000 ease-out 
             [&.active]:translate-y-0 [&.active]:opacity-100 dark:text-white">Blogs</p>
-            <div className="h-1/3 md:h-64 lg:h-[40%] reveal transform translate-y-[100px] opacity-0 transition-all duration-[1500ms] ease-out 
+            <div className="h-1/3 md:h-64 lg:h-[40%] reveal transform translate-y-[100px] opacity-0 transition-all duration-1000 ease-out 
             [&.active]:translate-y-0 [&.active]:opacity-100">
               <Blogcard 
                 href={"https://medium.com/@limhaowen097/how-i-learned-to-stop-worrying-and-use-prisma-transactions-right-d9fa609bbc97"} 

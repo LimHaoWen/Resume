@@ -1,17 +1,47 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
+/* Dark mode */
+@custom-variant dark (&:where(.dark, .dark *));
 
-/* Root styles */
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
+/* Your theme tokens (replace your old theme{}/colors/screens etc.) */
+@theme {
+  /* breakpoints */
+  --breakpoint-md: 770px;
+  --breakpoint-lg: 1440px;
+  --breakpoint-xl: 1700px;
+
+  /* colors */
+  --color-white: #ffffff;
+  --color-lightgray: #f1f5f9;
+  --color-gray: #cbd5e1;
+  --color-darkgray: #64748b;
+  --color-charcoal: #334155;
+  --color-black: #020617;
+
+  /* fonts */
+  --font-sans: "Helvetica", sans-serif;
+}
+@layer components {
+  .glass {
+    position: relative;
+  }
+  .glass::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(8px);
+    z-index: 0;
+    pointer-events: none;
+  }
+  .glass > * {
+    position: relative;
+    z-index: 1;
+  }
+  .dark .glass::before {
+    display: none;           
+    content: none;  
+  }
 }
 
 .dark {
