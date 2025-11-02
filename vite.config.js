@@ -18,6 +18,6 @@ export default defineConfig({
     open: true,
   },
   build: {
-    outDir: 'build',  // match CRA's output folder
+    outDir: 'build',
   },
 });
