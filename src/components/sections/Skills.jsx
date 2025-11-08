@@ -9,10 +9,8 @@ import Skillcard from '@/cards/skillcard'
 const Skills = () => {
   return (
     <>
-      <div className="h-[60vh] md:h-[60vh] lg:h-screen xl:h-[70vh] w-screen flex bg-transparent z-10 dark:bg-black">
-        <div className="h-full md:max-lg:w-4/5 lg:w-[68%] xl:w-[72%] mx-auto relative z-10 bg-transparent dark:bg-black
-        before:content-[''] before:absolute before:bg-darkgray before:left-[50%] before:bottom-[70px] 
-        before:translate-x-[-50%] before:w-[80%] before:h-0.5">
+      <div className="h-[60vh] md:h-[60vh] lg:h-screen xl:h-[70vh] w-screen flex bg-transparent before-divider z-10">
+        <div className="h-full md:max-lg:w-4/5 lg:w-[68%] xl:w-[72%] mx-auto relative z-10 bg-transparent">
           <p className="mt-0 pl-5 text-2xl md:max-lg:text-3xl lg:text-4xl xl:text-5xl md:mt-8 
           reveal relative transform translate-y-[100px] opacity-0 transition-all duration-1000 ease-out 
           [&.active]:translate-y-0 [&.active]:opacity-100 dark:text-white">Current Skills</p>

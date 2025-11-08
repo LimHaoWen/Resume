@@ -82,11 +82,9 @@ import Laksa from "/src/images/Laksa.webp"
 
   return (
       <>
-      <div className="h-[70vh] md:h-[80vh] lg:h-screen xl:h-[80vh] w-full bg-transparent relative 
-      z-10 overflow-hidden dark:bg-black">
-        <div className="h-full w-full md:max-lg:w-4/5 lg:max-xl:w-[68%] xl:w-[72%] bg-transparent dark:bg-black inline-block 
-        md:flex mx-auto relative before:content-[''] before:absolute before:bg-darkgray 
-        before:left-[50%] before:bottom-[70px] before:translate-x-[-50%] before:w-[80%] before:h-0.5 ">
+      <div className="h-[70vh] md:h-[80vh] lg:h-screen xl:h-[80vh] w-full bg-transparent relative before-divider z-10 overflow-hidden">
+        <div className="h-full w-full md:max-lg:w-4/5 lg:max-xl:w-[68%] xl:w-[72%] bg-transparent inline-block 
+        md:flex mx-auto relative">
           <p className="h-10 mt-0 pl-5 text-2xl md:max-lg:text-3xl lg:text-4xl xl:text-5xl md:mt-8 
           reveal relative transform translate-y-[100px] opacity-0 transition-all duration-1000 ease-out 
           [&.active]:translate-y-0 [&.active]:opacity-100 dark:text-white">Projects</p>

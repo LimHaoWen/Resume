@@ -7,9 +7,8 @@ const Experience = () => {
   return (
     <>
     {/* md screen and up */}
-      <div className="hidden md:flex md:max-lg:h-screen lg:max-xl:h-screen xl:h-[70vh] w-screen bg-transparent dark:bg-black">
-        <div className="h-full md:max-lg:w-4/5 lg:max-xl:w-[68%] xl:w-[72%] bg-transparent mx-auto relative z-10 
-        before-divider dark:bg-black">
+      <div className="hidden md:flex md:max-lg:h-screen lg:max-xl:h-screen xl:h-[70vh] w-screen bg-transparent z-10">
+        <div className="h-full md:max-lg:w-4/5 lg:max-xl:w-[68%] xl:w-[72%] bg-transparent mx-auto relative before-divider">
             <div className="w-1/2 h-[90%] float-left">
               <p className="text-2xl md:max-lg:text-3xl lg:text-4xl xl:text-5xl mt-8 reveal relative transform 
               translate-y-[100px] opacity-0 transition-all duration-1000 ease-out [&.active]:translate-y-0 
@@ -52,7 +51,7 @@ const Experience = () => {
       </div>
       
       {/* Mobile screens */}
-      <div className="relative h-[90vh] w-screen md:hidden  before-divider dark:bg-black">
+      <div className="relative h-[90vh] w-screen md:hidden before-divider z-10">
         <p className="text-2xl pl-5 reveal relative transform translate-y-[100px] opacity-0 transition-all 
         duration-1000 ease-out [&.active]:translate-y-0 [&.active]:opacity-100 dark:text-white">Past work experience</p>
         <div className="w-full h-[65%] reveal transform translate-y-[100px] opacity-0 transition-all 

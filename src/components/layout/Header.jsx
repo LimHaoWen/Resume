@@ -16,7 +16,7 @@ const Header = () => {
 
   const handleScroll = debounce(() => {
     const currentScrollPos = window.scrollY;
-    setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 100) || currentScrollPos < 20);
+    setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 20);
     setPrevScrollPos(currentScrollPos);
   }, 100);
 
@@ -33,7 +33,7 @@ const Header = () => {
   }
 
   return (
-    <nav className="flex flex-nowrap w-full items-center justify-between px-6 md:px-16 lg:px-60 lg:text-2xl z-20 glass dark:bg-black" 
+    <nav className="flex flex-nowrap w-full items-center justify-between px-6 md:px-16 lg:px-60 lg:text-2xl z-20 glass" 
     style={{ ...navbarStyles, top: visible ? '0' : '-150px' }}>
       <a href="/Resume" className="font-bold text-2xl md:text-3xl lg:text-4xl dark:text-white">Lim Hao Wen</a>
       <Navmenu />

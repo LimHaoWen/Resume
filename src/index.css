@@ -34,13 +34,12 @@
     z-index: 0;
     pointer-events: none;
   }
+  .dark .glass::before {
+    background: rgba(0, 0, 0, 0.45);
+  }
   .glass > * {
     position: relative;
     z-index: 1;
-  }
-  .dark .glass::before {
-    display: none;           
-    content: none;  
   }
   .before-divider {
     @apply relative before:content-[''] before:absolute before:bg-darkgray
