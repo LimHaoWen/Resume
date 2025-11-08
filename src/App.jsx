@@ -16,15 +16,17 @@ const App = () => {
 
   return (
     <>
-      <ParticlesBackground/>
-      <Header/>
-      <About/>
-      <Experience/>
-      <Projects/>
-      <Skills/>
-      <Blogs/>
-      <Footer/>
-      <DarkMode/>
+      <div className="flex flex-col w-screen">
+        <ParticlesBackground/>
+        <Header/>
+        <About/>
+        <Experience/>
+        <Projects/>
+        <Skills/>
+        <Blogs/>
+        <Footer/>
+        <DarkMode/>
+      </div>
     </>
   );
 }

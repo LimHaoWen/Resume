@@ -1,4 +1,5 @@
 import foodpanda from "/src/images/foodpanda.png"
+import egis from "/src/images/EGIS.jpeg"
 import { GoArrowUpRight } from "react-icons/go"
 import Expcard from "@/cards/expcard"
 
@@ -8,8 +9,7 @@ const Experience = () => {
     {/* md screen and up */}
       <div className="hidden md:flex md:max-lg:h-screen lg:max-xl:h-screen xl:h-[70vh] w-screen bg-transparent dark:bg-black">
         <div className="h-full md:max-lg:w-4/5 lg:max-xl:w-[68%] xl:w-[72%] bg-transparent mx-auto relative z-10 
-        before:content-[''] before:absolute before:bg-darkgray before:left-[50%] before:bottom-[70px] 
-        before:translate-x-[-50%] before:w-[80%] before:h-0.5 dark:bg-black">
+        before-divider dark:bg-black">
             <div className="w-1/2 h-[90%] float-left">
               <p className="text-2xl md:max-lg:text-3xl lg:text-4xl xl:text-5xl mt-8 reveal relative transform 
               translate-y-[100px] opacity-0 transition-all duration-1000 ease-out [&.active]:translate-y-0 
@@ -25,28 +25,38 @@ const Experience = () => {
                 </a>
               </div>
             </div>
-            <div className="w-1/2 h-full float-right">
+            <div className="w-1/2 h-full float-right reveal transform translate-y-[100px] opacity-0 transition-all 
+    duration-1000 ease-out [&.active]:translate-y-0 [&.active]:opacity-100">
               <Expcard mt="mt-8"
-                       company="foodpanda"
-                       period="Oct 2023 / Mar 2024" 
-                       role="Backend Software Engineer (Contract)"
-                       description="I gained proficiency in Golang, MySQL, Redis, and other tech services. I actively 
-                       contributed to developing robust endpoints for new features, continous improvements, bug fixes, and addressing 
-                       technical debt. Collaborating seamlessly with my team, I participated in discussions and 
-                       played a role in formulating long-term solutions."
+                      company="EGIS Healthcare Technologies"
+                      period="Jul 2025 / Current"
+                      role="Full Stack Developer"
+                      description="Enhanced enterprise medical web apps by integrating new workflows, updating database schemas, and refining result handling logic.
+                      Built responsive interfaces using Svelte and Tailwind for seamless mobile optimization.
+                      Developed an intuitive drag-and-drop dashboard for customizable menu configurations.
+                      Resolved call-stack issues to boost platform stability."
+                      src={egis}
+              />
+              <Expcard mt="mt-[-2px]"
+                      company="foodpanda"
+                      period="Oct 2023 / Mar 2024" 
+                      role="Backend Software Engineer (Contract)"
+                      description="I gained proficiency in Golang, MySQL, Redis, and other tech services. I actively 
+                      contributed to developing robust endpoints for new features, continous improvements, bug fixes, and addressing 
+                      technical debt. Collaborating seamlessly with my team, I participated in discussions and 
+                      played a role in formulating long-term solutions."
                       src={foodpanda}
                        />
-              {/* <Expcard mt="mt-[-2px]"/> */}
             </div>
           </div>
       </div>
       
       {/* Mobile screens */}
-      <div className="h-[90vh] w-screen md:hidden relative before:content-[''] before:absolute before:bg-gray 
-      before:left-[50%] before:bottom-[70px] before:translate-x-[-50%] before:w-[80%] before:h-0.5 dark:bg-black">
+      <div className="relative h-[90vh] w-screen md:hidden  before-divider dark:bg-black">
         <p className="text-2xl pl-5 reveal relative transform translate-y-[100px] opacity-0 transition-all 
         duration-1000 ease-out [&.active]:translate-y-0 [&.active]:opacity-100 dark:text-white">Past work experience</p>
-        <div className="w-full h-[65%]">
+        <div className="w-full h-[65%] reveal transform translate-y-[100px] opacity-0 transition-all 
+    duration-1000 ease-out [&.active]:translate-y-0 [&.active]:opacity-100">
           <Expcard  mt="mt-12"
                     h="h-[88%]"
                     company="foodpanda"

@@ -19,8 +19,7 @@ export default function Navmenu() {
   return (
     <Menu as="div" className="relative inline-block text-left opacity-90 lg:hidden">
       <div>
-        <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white
-        px-3 py-2 text-sm font-semibold text-gray-900 hover:stroke-lightgray dark:bg-black dark:stroke-white dark:fill-white">
+        <MenuButton className="glass inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-sm font-semibold text-gray-900 hover:stroke-lightgray dark:bg-black dark:stroke-white dark:fill-white">
           <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="40px" height="40px"><path d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"/></svg>
         </MenuButton>
       </div>

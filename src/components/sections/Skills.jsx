@@ -1,6 +1,6 @@
 import Mongologo from "/src/images/Mongologo.png"
 import Reactlogo from "/src/images/Reactlogo.png"
-import Nodelogo from "/src/images/Nodelogo.png"
+import SvelteLogo from "/src/images/SvelteLogo.png"
 import Nextlogo from "/src/images/NextLogo.webp"
 import MySQL from "/src/images/MySQLLogo.png"
 import Tailwindlogo from "/src/images/Tailwindlogo.png"
@@ -22,7 +22,7 @@ const Skills = () => {
             <Skillcard src={MySQL} alt={"MySQL"}/>
           </div>
           <div className="h-1/3 md:h-64 lg:h-80">
-            <Skillcard src={Nodelogo} alt={"Node.js"}/>
+            <Skillcard src={SvelteLogo} alt={"SvelteLogo"}/>
             <Skillcard src={Reactlogo} alt={"React"}/>
             <Skillcard src={Mongologo} alt={"MongoDB"}/>
           </div>

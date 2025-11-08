@@ -42,6 +42,11 @@
     display: none;           
     content: none;  
   }
+  .before-divider {
+    @apply relative before:content-[''] before:absolute before:bg-darkgray
+           before:left-1/2 before:-translate-x-1/2 before:bottom-[70px]
+           before:w-[80%] before:h-0.5;
+  }
 }
 
 .dark {
