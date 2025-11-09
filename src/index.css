@@ -42,9 +42,10 @@
     z-index: 1;
   }
   .before-divider {
-    @apply relative before:content-[''] before:absolute before:bg-darkgray
-           before:left-1/2 before:-translate-x-1/2 before:bottom-[70px]
-           before:w-[80%] before:h-0.5;
+    @apply relative mt-10 pt-10
+          before:content-[''] before:absolute before:top-0
+          before:left-1/2 before:-translate-x-1/2
+          before:w-[80%] before:h-0.5 before:bg-darkgray;
   }
 }
 

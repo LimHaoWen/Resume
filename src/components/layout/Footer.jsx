@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <>
-      <div id="contactme" className="w-full h-[40vh] relative mx-autos mb-24 md:mb-0 bg-transparent z-10 dark:text-white">
+      <div id="contactme" className="w-full h-[40vh] relative mx-autos mb-24 md:mb-0 bg-transparent before-divider z-10 dark:text-white">
           <div className="w-3/4 mt-10 lg:mt-36 mx-auto content-evenly">
             <div className="lg:w-1/3 block lg:inline-block font-thin text-center">
               <p className="lg:mb-6 text-xl md:text-3xl">Email</p>

@@ -1,7 +1,7 @@
 const Expcard = ({ mt, h, company, period, role, description, src }) => {
   return (
     <>
-    <div className={`${mt} ${h} md:h-[25%] lg:h-[34%] xl:h-[25%] flex w-[90%] mx-auto md:w-full border-solid border-y-2 
+    <div className={`${mt} ${h} pb-4 md:h-[25%] lg:h-[34%] xl:h-[25%] flex w-[90%] mx-auto md:w-full border-solid border-y-2 
     border-gray relative`}>
         <div className="flex float-left w-[20%] mt-10 justify-left">
             <img className="w-12 h-12 lg:w-16 lg:h-16 just" src={src} alt="image"></img>

@@ -7,7 +7,7 @@ const Experience = () => {
   return (
     <>
     {/* md screen and up */}
-      <div className="hidden md:flex md:max-lg:h-screen lg:max-xl:h-screen xl:h-[70vh] w-screen bg-transparent z-10">
+      <div className="hidden md:flex  lg:max-xl:h-screen xl:h-[70vh] w-screen bg-transparent z-10">
         <div className="h-full md:max-lg:w-4/5 lg:max-xl:w-[68%] xl:w-[72%] bg-transparent mx-auto relative before-divider">
             <div className="w-1/2 h-[90%] float-left">
               <p className="text-2xl md:max-lg:text-3xl lg:text-4xl xl:text-5xl mt-8 reveal relative transform 
@@ -51,12 +51,22 @@ const Experience = () => {
       </div>
       
       {/* Mobile screens */}
-      <div className="relative h-[90vh] w-screen md:hidden before-divider z-10">
+      <div className="relative flex flex-col md:hidden before-divider z-10">
         <p className="text-2xl pl-5 reveal relative transform translate-y-[100px] opacity-0 transition-all 
         duration-1000 ease-out [&.active]:translate-y-0 [&.active]:opacity-100 dark:text-white">Past work experience</p>
-        <div className="w-full h-[65%] reveal transform translate-y-[100px] opacity-0 transition-all 
+        <div className="h-full reveal transform translate-y-[100px] opacity-0 transition-all 
     duration-1000 ease-out [&.active]:translate-y-0 [&.active]:opacity-100">
-          <Expcard  mt="mt-12"
+          <Expcard mt="mt-12"
+                      company="EGIS Healthcare Technologies"
+                      period="Jul 2025 / Current"
+                      role="Full Stack Developer"
+                      description="Enhanced enterprise medical web apps by integrating new workflows, updating database schemas, and refining result handling logic.
+                      Built responsive interfaces using Svelte and Tailwind for seamless mobile optimization.
+                      Developed an intuitive drag-and-drop dashboard for customizable menu configurations.
+                      Resolved call-stack issues to boost platform stability."
+                      src={egis}
+          />
+          <Expcard  mt="mt-[-2px]"
                     h="h-[88%]"
                     company="foodpanda"
                     period="Oct 2023 / Mar 2024"
@@ -68,7 +78,7 @@ const Experience = () => {
                     src={foodpanda}
                     />  
         </div>
-        <div className="h-40 w-44 mt-3 sticky top-[30px] mx-auto reveal transform translate-y-[100px] 
+        <div className="w-44 pt-10 sticky mx-auto reveal transform translate-y-[100px] 
         opacity-0 transition-all duration-1000 ease-out [&.active]:translate-y-0 [&.active]:opacity-100 
         hover:scale-[1.3]">
           <a className="text-md text-black float-left dark:text-white" href="https://docs.google.com/document/d/1M2Xypin3QxIH1XFZ2_OkJw-5-BcSrklrKyol5Vm7GKA/edit?usp=sharing" 

@@ -34,7 +34,6 @@ import Laksa from "/src/images/Laksa.webp"
       const w = window.innerWidth || document.documentElement.clientWidth;
       let clamp = null;
       for (const key of Object.keys(screenSizes)) {
-        console.log(key);
         if (w < key) {
           clamp = screenSizes[key];
           break;
@@ -82,7 +81,7 @@ import Laksa from "/src/images/Laksa.webp"
 
   return (
       <>
-      <div className="h-[70vh] md:h-[80vh] lg:h-screen xl:h-[80vh] w-full bg-transparent relative before-divider z-10 overflow-hidden">
+      <div className="h-[50vh] md:h-[80vh] lg:h-screen xl:h-[80vh] w-full bg-transparent relative before-divider z-10 overflow-hidden">
         <div className="h-full w-full md:max-lg:w-4/5 lg:max-xl:w-[68%] xl:w-[72%] bg-transparent inline-block 
         md:flex mx-auto relative">
           <p className="h-10 mt-0 pl-5 text-2xl md:max-lg:text-3xl lg:text-4xl xl:text-5xl md:mt-8 
@@ -96,7 +95,6 @@ import Laksa from "/src/images/Laksa.webp"
               <Projectcard src={ Cat } link="https://www.google.com.sg/?safe=active&ssui=on" description={"To be filled"}/>
               <Projectcard src={ Street } link="https://www.google.com.sg/?safe=active&ssui=on" description={"To be filled"}/>
               <Projectcard src={ Corgi } link="https://www.google.com.sg/?safe=active&ssui=on" description={"To be filled"}/>
-              
           </div>
         </div>
       </div>
