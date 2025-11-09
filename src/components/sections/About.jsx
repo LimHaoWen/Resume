@@ -12,7 +12,7 @@ const About = () => {
 
   return (
     <>
-      <div className="relative flex md:h-screen xl:h-[80vh] w-full bg-transparent z-10 mt-[150px]">
+      <div className="relative flex lg:h-screen xl:h-[80vh] w-full bg-transparent z-10 mt-[150px]">
         <div className="flex flex-col md:flex-row lg:w-[68%] xl:w-[72%] mx-auto bg-transparent">
           <div className="lg:w-1/2 lg:float-left">
             <img className="lg:w-10/12 lg:mt-10" src={Profile} alt="ProfilePicture"/>

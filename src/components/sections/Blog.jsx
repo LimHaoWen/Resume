@@ -5,7 +5,7 @@ import ErrorHandling from "/src/images/ErrorHandling.jpg"
 const Blogs = () => {
     return (
       <>
-        <div className="h-[60vh] md:h-[60vh] lg:h-screen xl:h-[70vh] w-screen flex bg-transparent z-10">
+        <div className="flex bg-transparent z-10">
           <div className="h-full md:max-lg:w-4/5 lg:w-[68%] xl:w-[72%] mx-auto relative z-10 bg-transparent
           before-divider">
             <p className="mt-0 md:mb-8 pl-5 text-2xl md:max-lg:text-3xl lg:text-4xl xl:text-5xl md:mt-8 
@@ -30,8 +30,8 @@ const Blogs = () => {
                 title={"How to handle errors properly: A developer's guide"}
                 />
             </div>
-            <div className="h-1/3 md:h-64 lg:h-80">
-              {/* <Blogcard 
+            {/* <div className="h-1/3 md:h-64 lg:h-80">
+              <Blogcard 
                 href={"https://medium.com/@limhaowen097/how-i-learned-to-stop-worrying-and-use-prisma-transactions-right-d9fa609bbc97"} 
                 src={ Prism } 
                 alt={"MediumArticle"}
@@ -46,8 +46,8 @@ const Blogs = () => {
                 customWidth={"w-[65%]"}
                 leftRightMargin={"mr-10"}
                 title={"How I Learned to Stop Worring and Use Prisma Transactions Right"} 
-                /> */}
-            </div>
+                />
+            </div> */}
           </div>
         </div>
       </>
