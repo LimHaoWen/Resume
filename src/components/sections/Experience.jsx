@@ -1,7 +1,6 @@
-import foodpanda from "/src/images/foodpanda.png"
-import egis from "/src/images/EGIS.jpeg"
 import { GoArrowUpRight } from "react-icons/go"
-import Expcard from "@/cards/expcard"
+import ExpCard from "@/cards/ExpCard"
+import { desktopExperience, mobileExperience, resumeLinks } from "@/data/experience"
 
 const Experience = () => {
   return (
@@ -10,78 +9,43 @@ const Experience = () => {
       <div className="hidden md:flex  lg:max-xl:h-screen xl:h-[70vh] w-screen bg-transparent z-10">
         <div className="h-full md:max-lg:w-4/5 lg:max-xl:w-[68%] xl:w-[72%] bg-transparent mx-auto relative before-divider">
             <div className="w-1/2 h-[90%] float-left">
-              <p className="text-2xl md:max-lg:text-3xl lg:text-4xl xl:text-5xl mt-8 reveal relative transform 
-              translate-y-[100px] opacity-0 transition-all duration-1000 ease-out [&.active]:translate-y-0 
+              <p className="text-2xl md:max-lg:text-3xl lg:text-4xl xl:text-5xl mt-8 reveal relative transform
+              translate-y-[100px] opacity-0 transition-all duration-1000 ease-out [&.active]:translate-y-0
               [&.active]:opacity-100 dark:text-white">Past work experience</p>
-              <div className="md:max-lg:w-58%] lg:w-[40%] h-10 mt-20 sticky flex top-[30px] reveal transform 
-              translate-y-[100px] opacity-0 transition-all duration-1000 ease-out [&.active]:translate-y-0 
+              <div className="md:max-lg:w-58%] lg:w-[40%] h-10 mt-20 sticky flex top-[30px] reveal transform
+              translate-y-[100px] opacity-0 transition-all duration-1000 ease-out [&.active]:translate-y-0
               [&.active]:opacity-100 hover:scale-[1.3]">
-                <a className="text-md md:max-lg:text-lg lg:text-xl xl:text-2xl text-black float-left dark:text-white" 
-                href="https://docs.google.com/document/d/1unwNV2UpejiQb4n4H2GuV9bn7rUnABp_mf81GhEZy1A/edit?usp=sharing" 
+                <a className="text-md md:max-lg:text-lg lg:text-xl xl:text-2xl text-black float-left dark:text-white"
+                href={resumeLinks.desktop}
                 target="_blank" rel="noreferrer">Browse full résumé
-                <GoArrowUpRight className="w-5 h-5 lg:w-7 lg:h-7 float-right md:max-lg:mt-[0.2rem] lg:mt-0 xl:mt-[0.1rem] 
+                <GoArrowUpRight className="w-5 h-5 lg:w-7 lg:h-7 float-right md:max-lg:mt-[0.2rem] lg:mt-0 xl:mt-[0.1rem]
                 md:ml-4 lg:ml-1 xl:ml-3 dark:fill-white dark:stroke-white"/>
                 </a>
               </div>
             </div>
-            <div className="w-1/2 h-full float-right reveal transform translate-y-[100px] opacity-0 transition-all 
+            <div className="w-1/2 h-full float-right reveal transform translate-y-[100px] opacity-0 transition-all
     duration-1000 ease-out [&.active]:translate-y-0 [&.active]:opacity-100">
-              <Expcard mt="mt-8"
-                      company="EGIS Healthcare Technologies"
-                      period="Jul 2025 / Current"
-                      role="Full Stack Developer"
-                      description="Enhanced enterprise medical web apps by integrating new workflows, updating database schemas, and refining result handling logic.
-                      Built responsive interfaces using Svelte and Tailwind for seamless mobile optimization.
-                      Developed an intuitive drag-and-drop dashboard for customizable menu configurations.
-                      Resolved call-stack issues to boost platform stability."
-                      src={egis}
-              />
-              <Expcard mt="mt-[-2px]"
-                      company="foodpanda"
-                      period="Oct 2023 / Mar 2024" 
-                      role="Backend Software Engineer (Contract)"
-                      description="I gained proficiency in Golang, MySQL, Redis, and other tech services. I actively 
-                      contributed to developing robust endpoints for new features, continous improvements, bug fixes, and addressing 
-                      technical debt. Collaborating seamlessly with my team, I participated in discussions and 
-                      played a role in formulating long-term solutions."
-                      src={foodpanda}
-                       />
+              {desktopExperience.map((experience) => (
+                <ExpCard key={experience.company} {...experience} />
+              ))}
             </div>
           </div>
       </div>
-      
+
       {/* Mobile screens */}
       <div className="relative flex flex-col md:hidden before-divider z-10">
-        <p className="text-2xl pl-5 reveal relative transform translate-y-[100px] opacity-0 transition-all 
+        <p className="text-2xl pl-5 reveal relative transform translate-y-[100px] opacity-0 transition-all
         duration-1000 ease-out [&.active]:translate-y-0 [&.active]:opacity-100 dark:text-white">Past work experience</p>
-        <div className="h-full reveal transform translate-y-[100px] opacity-0 transition-all 
+        <div className="h-full reveal transform translate-y-[100px] opacity-0 transition-all
     duration-1000 ease-out [&.active]:translate-y-0 [&.active]:opacity-100">
-          <Expcard mt="mt-12"
-                      company="EGIS Healthcare Technologies"
-                      period="Jul 2025 / Current"
-                      role="Full Stack Developer"
-                      description="Enhanced enterprise medical web apps by integrating new workflows, updating database schemas, and refining result handling logic.
-                      Built responsive interfaces using Svelte and Tailwind for seamless mobile optimization.
-                      Developed an intuitive drag-and-drop dashboard for customizable menu configurations.
-                      Resolved call-stack issues to boost platform stability."
-                      src={egis}
-          />
-          <Expcard  mt="mt-[-2px]"
-                    h="h-[88%]"
-                    company="foodpanda"
-                    period="Oct 2023 / Mar 2024"
-                    role="Software Engineer Trainee (backend)"
-                    description="I gained proficiency in Golang, MySQL, Redis, and other tech services. I actively 
-                    contributed to developing robust endpoints for new features, continous improvements, bug fixes, and addressing 
-                    technical debt. Collaborating seamlessly with my team, I participated in discussions and 
-                    played a role in formulating long-term solutions."
-                    src={foodpanda}
-                    />  
+          {mobileExperience.map((experience) => (
+            <ExpCard key={experience.company} {...experience} />
+          ))}
         </div>
-        <div className="w-44 pt-10 sticky mx-auto reveal transform translate-y-[100px] 
-        opacity-0 transition-all duration-1000 ease-out [&.active]:translate-y-0 [&.active]:opacity-100 
+        <div className="w-44 pt-10 sticky mx-auto reveal transform translate-y-[100px]
+        opacity-0 transition-all duration-1000 ease-out [&.active]:translate-y-0 [&.active]:opacity-100
         hover:scale-[1.3]">
-          <a className="text-md text-black float-left dark:text-white" href="https://docs.google.com/document/d/1M2Xypin3QxIH1XFZ2_OkJw-5-BcSrklrKyol5Vm7GKA/edit?usp=sharing" 
+          <a className="text-md text-black float-left dark:text-white" href={resumeLinks.mobile}
           target="_blank" rel="noreferrer">Browse full résumé</a>
           <GoArrowUpRight className="w-6 h-6 float-right dark:fill-white dark:stroke-white"/>
         </div>

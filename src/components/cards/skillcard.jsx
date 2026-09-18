@@ -1,4 +1,4 @@
-const Skillcard = ({ src, alt, customWidth }) => {
+const SkillCard = ({ src, alt, customWidth }) => {
     const cardWidth = `w-1/2 ${customWidth || ''}`; // tailwind last item win approach
 
     return(
@@ -12,4 +12,4 @@ const Skillcard = ({ src, alt, customWidth }) => {
     )
 }
 
-export default Skillcard
+export default SkillCard

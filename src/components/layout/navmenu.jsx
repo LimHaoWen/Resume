@@ -3,19 +3,14 @@ import { Menu, MenuButton, MenuItem, MenuItems, Transition } from '@headlessui/r
 import {FaLinkedinIn, FaGithub} from 'react-icons/fa'
 import { FaMedium } from "react-icons/fa6"
 import { HiOutlineMail } from 'react-icons/hi'
+import { socialLinks } from '@/data/socialLinks'
+import { scrollToContact } from '@/utilities/scrollToContact'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-function scroll() {
-    window.scroll({
-    top: document.body.offsetHeight,
-    behavior: 'smooth',
-  });
-}
-
-export default function Navmenu() {
+export default function NavMenu() {
   return (
     <Menu as="div" className="relative inline-block text-left opacity-90 lg:hidden">
       <div>
@@ -39,7 +34,7 @@ export default function Navmenu() {
             <MenuItem>
               {({ focus }) => (
                 <a
-                  href="https://www.linkedin.com/in/lim-hao-wen/"
+                  href={socialLinks.linkedIn}
                   className={classNames(
                    focus ? 'bg-lightgray text-charcoal' : 'text-black dark:text-white',
                     'block px-4 py-2 text-sm'
@@ -52,7 +47,7 @@ export default function Navmenu() {
             <MenuItem>
               {({ focus }) => (
                 <a
-                  href="https://medium.com/@lim.haowen"
+                  href={socialLinks.medium}
                   className={classNames(
                    focus ? 'bg-lightgray text-charcoal' : 'text-black dark:text-white',
                     'block px-4 py-2 text-sm'
@@ -65,7 +60,7 @@ export default function Navmenu() {
             <MenuItem>
               {({ focus }) => (
                 <a
-                  href="https://github.com/LimHaoWen"
+                  href={socialLinks.github}
                   className={classNames(
                    focus ? 'bg-lightgray text-charcoal' : 'text-black dark:text-white',
                     'block px-4 py-2 text-sm'
@@ -75,7 +70,7 @@ export default function Navmenu() {
                 </a>
               )}
             </MenuItem>
-            <button type="button" onClick={scroll}>
+            <button type="button" onClick={scrollToContact}>
               <MenuItem>
                 {({ focus }) => (
                   <button

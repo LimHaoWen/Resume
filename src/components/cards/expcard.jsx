@@ -1,10 +1,10 @@
-const Expcard = ({ mt, h, company, period, role, description, src }) => {
+const ExpCard = ({ mt, h, company, period, role, description, src }) => {
   return (
     <>
-    <div className={`${mt} ${h} pb-4 md:h-[25%] lg:h-[34%] xl:h-[25%] flex w-[90%] mx-auto md:w-full border-solid border-y-2 
+    <div className={`${mt} ${h} pb-4 md:h-[25%] lg:h-[34%] xl:h-[25%] flex w-[90%] mx-auto md:w-full border-solid border-y-2
     border-gray relative`}>
         <div className="flex float-left w-[20%] mt-10 justify-left">
-            <img className="w-12 h-12 lg:w-16 lg:h-16 just" src={src} alt="image"></img>
+            <img className="w-12 h-12 lg:w-16 lg:h-16" src={src} alt="image"></img>
         </div>
         <div className="float-right w-[80%] mt-5">
             <p className="text-md text-darkgray dark:text-gray">{company} — {period}</p>
@@ -16,4 +16,4 @@ const Expcard = ({ mt, h, company, period, role, description, src }) => {
   )
 }
 
-export default Expcard
+export default ExpCard
