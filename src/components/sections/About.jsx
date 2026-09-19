@@ -2,8 +2,10 @@ import {useState, useEffect} from "react"
 import Profile from "/src/images/Profile.jpeg"
 
 const About = () => {
-  const intro = `A tinkering software engineer based in Singapore. As a self-taught engineer with 1 year of professional 
-                experience, I have worked on some projects along the way. Stick around and have a look.`
+  const intro = `Software engineer with 2 years experience in full-stack development, 
+                with a backend focus across healthcare and large-scale consumer platforms. 
+                Skilled in building scalable systems, optimizing UI, and applying DevOps 
+                practices. AWS Solutions Architect Associate certified.`
   const [isActive, setIsActive] = useState(false);
 
   useEffect(() => {
