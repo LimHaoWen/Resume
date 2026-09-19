@@ -33,8 +33,9 @@ export const projects = [
 ];
 
 // Max drag translation (%) per viewport-width breakpoint, keyed ascending.
+// "fit" measures the track so the last card stops flush with the right edge.
 export const carouselClamps = {
-  770: -70,
+  1280: "fit",
   1440: -74,
   1700: -56.5,
   3000: -47,

@@ -35,7 +35,7 @@ const Experience = () => {
 
       <div className={isDesktop
         ? "[grid-area:link] text-glass w-2/5 h-10 mt-20 sticky top-[30px] reveal reveal-slide hover:scale-[1.3]"
-        : "[grid-area:link] text-glass w-fit pt-10 sticky mx-auto reveal reveal-slide hover:scale-[1.3]"}>
+        : "[grid-area:link] text-glass w-fit pt-10 sticky mx-auto reveal hover:scale-[1.3]"}>
         <ResumeLink href={resumeLink} isDesktop={isDesktop} />
       </div>
     </div>
