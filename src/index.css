@@ -63,6 +63,19 @@
     background: rgba(0, 0, 0, 0.35);
   }
 
+  /* Stronger variant for dense body copy: heavier blur and a wider opaque
+     centre so the particles behind paragraphs are fully softened. */
+  .text-glass-strong::before {
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    mask-image: radial-gradient(ellipse at center, black 45%, transparent 90%);
+    -webkit-mask-image: radial-gradient(ellipse at center, black 45%, transparent 90%);
+  }
+  .dark .text-glass-strong::before {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
   .before-divider {
     @apply relative mt-10 pt-10
           before:content-[''] before:absolute before:top-0

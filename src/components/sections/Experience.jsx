@@ -1,13 +1,13 @@
 import { GoArrowUpRight } from "react-icons/go"
 import ExpCard from "@/cards/ExpCard"
 import { useMediaQuery } from "@/utilities/useMediaQuery"
-import { desktopExperience, mobileExperience, resumeLinks } from "@/data/experience"
+import { desktopExperience, mobileExperience, resumeLink } from "@/data/experience"
 
 const ResumeLink = ({ href, isDesktop }) => (
   <a
     className={isDesktop
-      ? "inline-flex items-center gap-1 lg:gap-2 xl:gap-3 text-base md:text-lg lg:text-xl xl:text-2xl text-black dark:text-white"
-      : "inline-flex items-center gap-2 text-base text-black dark:text-white"}
+      ? "inline-flex items-center whitespace-nowrap gap-1 lg:gap-2 xl:gap-3 text-base md:text-lg lg:text-xl xl:text-2xl text-black dark:text-white"
+      : "inline-flex items-center whitespace-nowrap gap-2 text-base text-black dark:text-white"}
     href={href} target="_blank" rel="noreferrer"
   >
     Browse full résumé
@@ -35,8 +35,8 @@ const Experience = () => {
 
       <div className={isDesktop
         ? "[grid-area:link] text-glass w-2/5 h-10 mt-20 sticky top-[30px] reveal reveal-slide hover:scale-[1.3]"
-        : "[grid-area:link] text-glass w-44 pt-10 sticky mx-auto reveal reveal-slide hover:scale-[1.3]"}>
-        <ResumeLink href={isDesktop ? resumeLinks.desktop : resumeLinks.mobile} isDesktop={isDesktop} />
+        : "[grid-area:link] text-glass w-fit pt-10 sticky mx-auto reveal reveal-slide hover:scale-[1.3]"}>
+        <ResumeLink href={resumeLink} isDesktop={isDesktop} />
       </div>
     </div>
   )
