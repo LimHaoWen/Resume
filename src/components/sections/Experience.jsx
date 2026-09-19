@@ -1,56 +1,44 @@
 import { GoArrowUpRight } from "react-icons/go"
 import ExpCard from "@/cards/ExpCard"
+import { useMediaQuery } from "@/utilities/useMediaQuery"
 import { desktopExperience, mobileExperience, resumeLinks } from "@/data/experience"
 
+const ResumeLink = ({ href, isDesktop }) => (
+  <a
+    className={isDesktop
+      ? "inline-flex items-center gap-1 lg:gap-2 xl:gap-3 text-base md:text-lg lg:text-xl xl:text-2xl text-black dark:text-white"
+      : "inline-flex items-center gap-2 text-base text-black dark:text-white"}
+    href={href} target="_blank" rel="noreferrer"
+  >
+    Browse full résumé
+    <GoArrowUpRight className={isDesktop
+      ? "w-5 h-5 lg:w-7 lg:h-7 shrink-0 dark:fill-white dark:stroke-white"
+      : "w-6 h-6 shrink-0 dark:fill-white dark:stroke-white"} />
+  </a>
+)
+
 const Experience = () => {
+  const isDesktop = useMediaQuery("(min-width: 768px)")
+  const experience = isDesktop ? desktopExperience : mobileExperience
+
   return (
-    <>
-    {/* md screen and up */}
-      <div className="hidden md:flex  lg:max-xl:h-screen xl:h-[70vh] w-screen bg-transparent z-10">
-        <div className="h-full md:max-lg:w-4/5 lg:max-xl:w-[68%] xl:w-[72%] bg-transparent mx-auto relative before-divider">
-            <div className="w-1/2 h-[90%] float-left">
-              <p className="text-2xl md:max-lg:text-3xl lg:text-4xl xl:text-5xl mt-8 reveal relative transform
-              translate-y-[100px] opacity-0 transition-all duration-1000 ease-out [&.active]:translate-y-0
-              [&.active]:opacity-100 dark:text-white">Past work experience</p>
-              <div className="md:max-lg:w-58%] lg:w-[40%] h-10 mt-20 sticky flex top-[30px] reveal transform
-              translate-y-[100px] opacity-0 transition-all duration-1000 ease-out [&.active]:translate-y-0
-              [&.active]:opacity-100 hover:scale-[1.3]">
-                <a className="text-md md:max-lg:text-lg lg:text-xl xl:text-2xl text-black float-left dark:text-white"
-                href={resumeLinks.desktop}
-                target="_blank" rel="noreferrer">Browse full résumé
-                <GoArrowUpRight className="w-5 h-5 lg:w-7 lg:h-7 float-right md:max-lg:mt-[0.2rem] lg:mt-0 xl:mt-[0.1rem]
-                md:ml-4 lg:ml-1 xl:ml-3 dark:fill-white dark:stroke-white"/>
-                </a>
-              </div>
-            </div>
-            <div className="w-1/2 h-full float-right reveal transform translate-y-[100px] opacity-0 transition-all
-    duration-1000 ease-out [&.active]:translate-y-0 [&.active]:opacity-100">
-              {desktopExperience.map((experience) => (
-                <ExpCard key={experience.company} {...experience} />
-              ))}
-            </div>
-          </div>
+    <div className="experience-grid grid md:grid-cols-2 w-full section-container before-divider z-10">
+      <p className={`[grid-area:heading] section-heading text-glass reveal reveal-slide ${isDesktop ? "mt-8" : "pl-5"}`}>
+        Past work experience
+      </p>
+
+      <div className="[grid-area:cards] reveal reveal-slide">
+        {experience.map((exp) => (
+          <ExpCard key={exp.company} {...exp} />
+        ))}
       </div>
 
-      {/* Mobile screens */}
-      <div className="relative flex flex-col md:hidden before-divider z-10">
-        <p className="text-2xl pl-5 reveal relative transform translate-y-[100px] opacity-0 transition-all
-        duration-1000 ease-out [&.active]:translate-y-0 [&.active]:opacity-100 dark:text-white">Past work experience</p>
-        <div className="h-full reveal transform translate-y-[100px] opacity-0 transition-all
-    duration-1000 ease-out [&.active]:translate-y-0 [&.active]:opacity-100">
-          {mobileExperience.map((experience) => (
-            <ExpCard key={experience.company} {...experience} />
-          ))}
-        </div>
-        <div className="w-44 pt-10 sticky mx-auto reveal transform translate-y-[100px]
-        opacity-0 transition-all duration-1000 ease-out [&.active]:translate-y-0 [&.active]:opacity-100
-        hover:scale-[1.3]">
-          <a className="text-md text-black float-left dark:text-white" href={resumeLinks.mobile}
-          target="_blank" rel="noreferrer">Browse full résumé</a>
-          <GoArrowUpRight className="w-6 h-6 float-right dark:fill-white dark:stroke-white"/>
-        </div>
+      <div className={isDesktop
+        ? "[grid-area:link] text-glass w-2/5 h-10 mt-20 sticky top-[30px] reveal reveal-slide hover:scale-[1.3]"
+        : "[grid-area:link] text-glass w-44 pt-10 sticky mx-auto reveal reveal-slide hover:scale-[1.3]"}>
+        <ResumeLink href={isDesktop ? resumeLinks.desktop : resumeLinks.mobile} isDesktop={isDesktop} />
       </div>
-    </>
+    </div>
   )
 }
 

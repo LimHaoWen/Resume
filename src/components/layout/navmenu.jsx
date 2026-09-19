@@ -10,6 +10,8 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
+const MENU_ICON_CLASS = "inline-block mr-2 mb-[0.15rem]"
+
 export default function NavMenu() {
   return (
     <Menu as="div" className="relative inline-block text-left opacity-90 lg:hidden">
@@ -40,7 +42,7 @@ export default function NavMenu() {
                     'block px-4 py-2 text-sm'
                   )}
                 >
-                  <FaLinkedinIn className="inline-block h-5 mr-2 mb-[0.15rem]"/> LinkedIn
+                  <FaLinkedinIn className={`${MENU_ICON_CLASS} h-5`}/> LinkedIn
                 </a>
               )}
             </MenuItem>
@@ -53,7 +55,7 @@ export default function NavMenu() {
                     'block px-4 py-2 text-sm'
                   )}
                 >
-                  <FaMedium className="inline-block h-5 mr-2 mb-[0.15rem]"/> Medium
+                  <FaMedium className={`${MENU_ICON_CLASS} h-5`}/> Medium
                 </a>
               )}
             </MenuItem>
@@ -66,7 +68,7 @@ export default function NavMenu() {
                     'block px-4 py-2 text-sm'
                   )}
                 >
-                  <FaGithub className="inline-block h-5 mr-2 mb-[0.15rem]"/> Github
+                  <FaGithub className={`${MENU_ICON_CLASS} h-5`}/> Github
                 </a>
               )}
             </MenuItem>
@@ -80,7 +82,7 @@ export default function NavMenu() {
                     'block px-4 py-2 text-sm'
                     )}
                   >
-                    <HiOutlineMail className="inline-block h-4 mr-2 mb-[0.15rem]"/> Contact Me
+                    <HiOutlineMail className={`${MENU_ICON_CLASS} h-4`}/> Contact Me
                   </button>
                 )}
               </MenuItem>

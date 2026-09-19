@@ -24,7 +24,7 @@ export const desktopExperience = [
     src: egis,
   },
   {
-    mt: "mt-[-2px]",
+    mt: "-mt-0.5",
     company: "foodpanda",
     period: "Oct 2023 / Mar 2024",
     role: "Backend Software Engineer (Contract)",
@@ -43,7 +43,7 @@ export const mobileExperience = [
     src: egis,
   },
   {
-    mt: "mt-[-2px]",
+    mt: "-mt-0.5",
     h: "h-[88%]",
     company: "foodpanda",
     period: "Oct 2023 / Mar 2024",

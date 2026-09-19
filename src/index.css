@@ -5,10 +5,7 @@
 
 /* Your theme tokens (replace your old theme{}/colors/screens etc.) */
 @theme {
-  /* breakpoints */
-  --breakpoint-md: 770px;
-  --breakpoint-lg: 1440px;
-  --breakpoint-xl: 1700px;
+  /* breakpoints (Tailwind defaults: sm=640 mobile/tablet, md=768 tablet, lg=1024 laptop, xl=1280 desktop, 2xl=1536 wide) */
 
   /* colors */
   --color-white: #ffffff;
@@ -41,11 +38,104 @@
     position: relative;
     z-index: 1;
   }
+
+  /* Readability aid for text sitting over the particle background: blurs
+     what's behind it, but the blur fades out via a soft radial mask instead
+     of stopping at a hard box edge, so no rectangle is ever visible. The
+     blurred layer sits at z-index:-1, so normal in-flow text above it (no
+     extra wrapper/z-index needed on the text itself) always paints on top. */
+  .text-glass {
+    position: relative;
+  }
+  .text-glass::before {
+    content: "";
+    position: absolute;
+    inset: -0.75rem -1rem;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    mask-image: radial-gradient(ellipse at center, black 25%, transparent 80%);
+    -webkit-mask-image: radial-gradient(ellipse at center, black 25%, transparent 80%);
+    z-index: -1;
+    pointer-events: none;
+  }
+  .dark .text-glass::before {
+    background: rgba(0, 0, 0, 0.35);
+  }
+
   .before-divider {
     @apply relative mt-10 pt-10
           before:content-[''] before:absolute before:top-0
           before:left-1/2 before:-translate-x-1/2
-          before:w-[80%] before:h-0.5 before:bg-darkgray;
+          before:w-4/5 before:h-0.5 before:bg-darkgray;
+  }
+
+  /* Shared scroll-reveal animation: add `reveal` to any element that should
+     fade in; `reveal.js` toggles `active` on it based on scroll position.
+     Add `reveal-slide` alongside it for elements that should also slide up
+     (most do; the horizontally-dragged project track fades only). */
+  .reveal {
+    @apply opacity-0 transition-all duration-1000 ease-out;
+  }
+  .reveal.active {
+    @apply opacity-100;
+  }
+  .reveal-slide {
+    @apply relative transform translate-y-[100px];
+  }
+  .reveal-slide.active {
+    @apply translate-y-0;
+  }
+
+  /* Shared page-section content column: caps line length on wide screens
+     instead of scaling as a percentage of the viewport indefinitely. */
+  .section-container {
+    @apply w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* The big title at the top of each page section (About excluded — it uses
+     its own one-off hero treatment). Combine with `reveal reveal-slide` for
+     the scroll-in animation — Tailwind's @apply can't reference those custom
+     classes directly here, only real utilities. */
+  .section-heading {
+    @apply text-2xl md:text-3xl lg:text-4xl xl:text-5xl dark:text-white;
+  }
+
+  /* Secondary/muted body text (card captions, the About intro paragraph). */
+  .text-muted {
+    @apply text-darkgray dark:text-gray;
+  }
+
+  /* Centered tile used for logo/thumbnail grids (Skills, Blog). Height is left
+     to each caller as plain utilities: mixing responsive utilities into a
+     custom component class puts them in the lower-priority `components`
+     layer, where they'd lose to any plain (non-component) height utility
+     applied alongside, e.g. a base-tier `h-32`. `align-top` overrides the
+     default baseline alignment inline-flex boxes get from their siblings —
+     without it, tiles shift vertically to line up their *content's* baseline
+     (which varies with each logo image's own aspect ratio), throwing off
+     their top edges relative to each other and, with it, when each one
+     crosses the scroll-reveal threshold. */
+  .tile {
+    @apply inline-flex items-center justify-center align-top;
+  }
+
+  /* One of Footer's three equal-width label/value columns. */
+  .footer-column {
+    @apply lg:w-1/3 block lg:inline-block font-thin text-center;
+  }
+
+  /* Experience section layout: reflows via CSS Grid named areas instead of
+     legacy floats. One markup tree (see Experience.jsx) whose "heading",
+     "cards" and "link" children the browser rearranges as the viewport
+     grows, rather than rendering separate mobile/desktop trees. */
+  .experience-grid {
+    grid-template-areas: "heading" "cards" "link";
+  }
+  @media (min-width: 768px) {
+    .experience-grid {
+      grid-template-areas: "heading cards" "link cards";
+    }
   }
 }
 
